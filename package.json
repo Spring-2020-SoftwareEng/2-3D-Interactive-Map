@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@amcharts/amcharts4": "^4.9.0",
-    "@amcharts/amcharts4-geodata": "^4.1.11",
+    "@amcharts/amcharts4-geodata": "^4.1.12",
     "@angular/animations": "~9.0.0",
     "@angular/common": "~9.0.0",
     "@angular/compiler": "~9.0.0",
