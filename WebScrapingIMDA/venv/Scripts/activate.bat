@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\thero\Documents\PROGRAMMING SHIT\WebScrapingIMDA\venv"
+set "VIRTUAL_ENV=C:\Users\thero\my-project\WebScrapingIMDA\venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"

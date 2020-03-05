@@ -37,8 +37,23 @@ var chart = am4core.create("chartdiv", am4maps.MapChart);
 chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
 chart.geodata = am4geodata_worldLow;
-chart.projection = new am4maps.projections.Miller();
+chart.projection = new am4maps.projections.Orthographic();
+chart.deltaLatitude = -30;
+chart.panBehavior = "rotateLongLat";
+chart.marginTop = 20;
+chart.marginBottom = 20;
+// Add zoom control
+chart.zoomControl = new am4maps.ZoomControl();
 
+
+chart.adapter.add("deltaLatitude", function(delatLatitude){
+    return am4core.math.fitToRange(delatLatitude, -90, 90);
+})
+
+var grid = chart.series.push(new am4maps.GraticuleSeries());
+grid.toBack();
+
+grid.fitExtent = false;
 var title = chart.chartContainer.createChild(am4core.Label);
 title.text = "Population";
 title.fontSize = 20;
@@ -556,6 +571,236 @@ var maData = [
 
 ];
 
+var gdpData = [
+{ id: "AF", value: 69450000000 },
+{ id: "AL", value: 36010000000 },
+{ id: "DZ", value: 630000000000 },
+{ id: "AS", value: 658000000 },
+{ id: "AD", value: 3327000000 },
+{ id: "AO", value: 193600000000 },
+{ id: "AI", value: 175400000 },
+{ id: "AG", value: 2398000000 },
+{ id: "AR", value: 922100000000 },
+{ id: "AM", value: 28340000000 },
+{ id: "AW", value: 4158000000 },
+{ id: "AU", value: 1248000000000 },
+{ id: "AT", value: 441000000000 },
+{ id: "AZ", value: 172200000000 },
+{ id: "BS", value: 12060000000 },
+{ id: "BH", value: 71170000000 },
+{ id: "BD", value: 690300000000 },
+{ id: "BB", value: 5218000000 },
+{ id: "BY", value: 179400000000 },
+{ id: "BE", value: 529200000000 },
+{ id: "BZ", value: 3218000000 },
+{ id: "BJ", value: 25390000000 },
+{ id: "BM", value: 6127000000 },
+{ id: "BT", value: 7205000000 },
+{ id: "BO", value: 83720000000 },
+{ id: "BA", value: 44830000000 },
+{ id: "BW", value: 39010000000 },
+{ id: "BR", value: 3248000000000 },
+{ id: "VG", value: 500000000 },
+{ id: "BN", value: 33870000000 },
+{ id: "BG", value: 153500000000 },
+{ id: "BF", value: 35850000000 },
+{ id: "MM", value: 329800000000 },
+{ id: "BI", value: 8007000000 },
+{ id: "CV", value: 3777000000 },
+{ id: "KH", value: 64210000000 },
+{ id: "CM", value: 89540000000 },
+{ id: "CA", value: 1774000000000 },
+{ id: "KY", value: 2507000000 },
+{ id: "CF", value: 3390000000 },
+{ id: "TD", value: 28620000000 },
+{ id: "CL", value: 452100000000 },
+{ id: "CN", value: 25360000000000 },
+{ id: "CO", value: 711600000000 },
+{ id: "KM", value: 1319000000 },
+{ id: "CD", value: 68600000000 },
+{ id: "CG", value: 29390000000 },
+{ id: "CK", value: 299900000 },
+{ id: "CR", value: 83940000000 },
+{ id: "CI", value: 97160000000 },
+{ id: "HR", value: 102100000000 },
+{ id: "CU", value: 137000000000 },
+{ id: "CW", value: 3128000000 },
+{ id: "CY", value: 31780000000 },
+{ id: "CZ", value: 375900000000 },
+{ id: "DK", value: 287800000000 },
+{ id: "DJ", value: 3640000000 },
+{ id: "DM", value: 783000000 },
+{ id: "DO", value: 173000000000 },
+{ id: "EC", value: 193000000000 },
+{ id: "EG", value: 1204000000000 },
+{ id: "SV", value: 51170000000 },
+{ id: "GQ", value: 31520000000 },
+{ id: "ER", value: 9402000000 },
+{ id: "EE", value: 41650000000 },
+{ id: "SZ", value: 11600000000 },
+{ id: "ET", value: 200600000000 },
+{ id: "FO", value: 2001000000 },
+{ id: "FJ", value: 8629000000 },
+{ id: "FI", value: 244900000000 },
+{ id: "FR", value: 2856000000000 },
+{ id: "PF", value: 5490000000 },
+{ id: "GA", value: 36660000000 },
+{ id: "GM", value: 5556000000 },
+{ id: "GE", value: 39850000000 },
+{ id: "DE", value: 4199000000000 },
+{ id: "GH", value: 134000000000 },
+{ id: "GI", value: 2044000000 },
+{ id: "GR", value: 299300000000 },
+{ id: "GL", value: 2413000000 },
+{ id: "GD", value: 1634000000 },
+{ id: "GU", value: 5793000000 },
+{ id: "GT", value: 138100000000 },
+{ id: "GG", value: 3465000000 },
+{ id: "GN", value: 27970000000 },
+{ id: "GW", value: 3171000000 },
+{ id: "GY", value: 6301000000 },
+{ id: "HT", value: 19970000000 },
+{ id: "HN", value: 46300000000 },
+{ id: "HK", value: 480500000000 },
+{ id: "HU", value: 289600000000 },
+{ id: "IS", value: 18180000000 },
+{ id: "IN", value: 9474000000000 },
+{ id: "ID", value: 3250000000000 },
+{ id: "IR", value: 1640000000000 },
+{ id: "IQ", value: 649300000000 },
+{ id: "IE", value: 353300000000 },
+{ id: "IM", value: 6792000000 },
+{ id: "IL", value: 317100000000 },
+{ id: "IT", value: 2317000000000 },
+{ id: "JM", value: 26060000000 },
+{ id: "JP", value: 5443000000000 },
+{ id: "JE", value: 5569000000 },
+{ id: "JO", value: 89000000000 },
+{ id: "KZ", value: 478600000000 },
+{ id: "KE", value: 163700000000 },
+{ id: "KI", value: 227000000 },
+{ id: "KP", value: 40000000000 },
+{ id: "KR", value: 2035000000000 },
+{ id: "XK", value: 19600000000 },
+{ id: "KW", value: 289700000000 },
+{ id: "KG", value: 23150000000 },
+{ id: "LA", value: 49340000000 },
+{ id: "LV", value: 54020000000 },
+{ id: "LB", value: 88250000000 },
+{ id: "LS", value: 6656000000 },
+{ id: "LR", value: 6112000000 },
+{ id: "LY", value: 61970000000 },
+{ id: "LI", value: 4978000000 },
+{ id: "LT", value: 91470000000 },
+{ id: "LU", value: 62110000000 },
+{ id: "MO", value: 77330000000 },
+{ id: "MG", value: 39850000000 },
+{ id: "MW", value: 22420000000 },
+{ id: "MY", value: 933300000000 },
+{ id: "MV", value: 6901000000 },
+{ id: "ML", value: 41220000000 },
+{ id: "MT", value: 19260000000 },
+{ id: "MH", value: 196000000 },
+{ id: "MR", value: 17280000000 },
+{ id: "MU", value: 28270000000 },
+{ id: "MX", value: 2463000000000 },
+{ id: "FM", value: 348000000 },
+{ id: "MD", value: 23720000000 },
+{ id: "MC", value: 7672000000 },
+{ id: "MN", value: 43540000000 },
+{ id: "ME", value: 11080000000 },
+{ id: "MS", value: 167400000 },
+{ id: "MA", value: 298600000000 },
+{ id: "MZ", value: 37090000000 },
+{ id: "NA", value: 26600000000 },
+{ id: "NR", value: 160000000 },
+{ id: "NP", value: 79190000000 },
+{ id: "NL", value: 924400000000 },
+{ id: "NC", value: 11110000000 },
+{ id: "NZ", value: 189000000000 },
+{ id: "NI", value: 36400000000 },
+{ id: "NE", value: 21860000000 },
+{ id: "NG", value: 1121000000000 },
+{ id: "MK", value: 31030000000 },
+{ id: "MP", value: 1242000000 },
+{ id: "NO", value: 381200000000 },
+{ id: "OM", value: 190100000000 },
+{ id: "PK", value: 1061000000000 },
+{ id: "PW", value: 264000000 },
+{ id: "PA", value: 104100000000 },
+{ id: "PG", value: 30190000000 },
+{ id: "PY", value: 88910000000 },
+{ id: "PE", value: 430300000000 },
+{ id: "PH", value: 877200000000 },
+{ id: "PL", value: 1126000000000 },
+{ id: "PT", value: 314100000000 },
+{ id: "PR", value: 130000000000 },
+{ id: "QA", value: 339500000000 },
+{ id: "RO", value: 483400000000 },
+{ id: "RU", value: 4016000000000 },
+{ id: "RW", value: 24680000000 },
+{ id: "SH", value: 31100000 },
+{ id: "KN", value: 1550000000 },
+{ id: "LC", value: 2542000000 },
+{ id: "MF", value: 561500000 },
+{ id: "PM", value: 261300000 },
+{ id: "VC", value: 1265000000 },
+{ id: "WS", value: 1137000000 },
+{ id: "SM", value: 2064000000 },
+{ id: "ST", value: 686000000 },
+{ id: "SA", value: 1775000000000 },
+{ id: "SN", value: 54800000000 },
+{ id: "RS", value: 105700000000 },
+{ id: "SC", value: 2750000000 },
+{ id: "SL", value: 11550000000 },
+{ id: "SG", value: 528100000000 },
+{ id: "SX", value: 365800000 },
+{ id: "SK", value: 179700000000 },
+{ id: "SI", value: 71230000000 },
+{ id: "SB", value: 1330000000 },
+{ id: "SO", value: 20440000000 },
+{ id: "ZA", value: 767200000000 },
+{ id: "SS", value: 20010000000 },
+{ id: "ES", value: 1778000000000 },
+{ id: "LK", value: 275800000000 },
+{ id: "SD", value: 177400000000 },
+{ id: "SR", value: 8688000000 },
+{ id: "SE", value: 518000000000 },
+{ id: "CH", value: 523100000000 },
+{ id: "SY", value: 50280000000 },
+{ id: "TW", value: 1189000000000 },
+{ id: "TJ", value: 28430000000 },
+{ id: "TZ", value: 162500000000 },
+{ id: "TH", value: 1236000000000 },
+{ id: "TL", value: 7426000000 },
+{ id: "TG", value: 12970000000 },
+{ id: "TO", value: 591000000 },
+{ id: "TT", value: 42850000000 },
+{ id: "TN", value: 137700000000 },
+{ id: "TR", value: 2186000000000 },
+{ id: "TM", value: 103700000000 },
+{ id: "TC", value: 632000000 },
+{ id: "TV", value: 42000000 },
+{ id: "UG", value: 89190000000 },
+{ id: "UA", value: 369600000000 },
+{ id: "AE", value: 696000000000 },
+{ id: "GB", value: 2925000000000 },
+{ id: "US", value: 19490000000000 },
+{ id: "UY", value: 78160000000 },
+{ id: "UZ", value: 223000000000 },
+{ id: "VU", value: 772000000 },
+{ id: "VE", value: 381600000000 },
+{ id: "VN", value: 648700000000 },
+{ id: "VI", value: 3872000000 },
+{ id: "WF", value: 60000000 },
+{ id: "PS", value: 21220000000 },
+{ id: "EH", value: 906500000 },
+{ id: "YE", value: 73630000000 },
+{ id: "ZM", value: 68930000000 },
+{ id: "ZW", value: 34270000000 }
+
+];
+
 // country data
 polygonSeries.data = popData;
 // excludes Antarctica
@@ -571,10 +816,10 @@ linkContainer.x = am4core.percent(95);
 linkContainer.y = am4core.percent(60);
 linkContainer.horizontalCenter = "middle";
 
-let equirectangular= linkContainer.createChild(am4core.TextLink);
-equirectangular.margin(10,10,10,10);
-equirectangular.text = "Population";
-equirectangular.events.on("hit", function(){
+let popButton= linkContainer.createChild(am4core.TextLink);
+popButton.margin(10,10,10,10);
+popButton.text = "Population";
+popButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.Projection();
     title.text = "Population"
     polygonSeries.heatRules.push({
@@ -586,11 +831,11 @@ equirectangular.events.on("hit", function(){
     polygonSeries.data = popData;
 })
 
-let mercator = linkContainer.createChild(am4core.TextLink);
-mercator.text = "Median Age";
-mercator.margin(10,10,10,10);
-mercator.events.on("hit", function(){
-    //chart.projection = new am4maps.projections.Mercator();
+let maButton = linkContainer.createChild(am4core.TextLink);
+maButton.text = "Median Age";
+maButton.margin(10,10,10,10);
+maButton.events.on("hit", function(){
+    //chart.projection = new am4maps.projections.maButton();
     title.text = "Median Age"
     polygonSeries.heatRules.push({
       property: "fill",
@@ -599,6 +844,44 @@ mercator.events.on("hit", function(){
       max: am4core.color("#8573ff")
     });
     polygonSeries.data = maData;
+})
+
+let gdpButton = linkContainer.createChild(am4core.TextLink);
+gdpButton.text = "GDP (PPP)";
+gdpButton.margin(10,10,10,10);
+gdpButton.events.on("hit", function(){
+    //chart.projection = new am4maps.projections.gdpButton();
+    title.text = "GDP (PPP)"
+    polygonSeries.heatRules.push({
+      property: "fill",
+      target: polygonSeries.mapPolygons.template,
+      min: am4core.color("#ffffff"),
+      max: am4core.color("#60e645")
+    });
+    polygonSeries.data = gdpData;
+})
+
+let lc2 = chart.createChild(am4core.Container);
+lc2.isMeasured = false;
+lc2.layout = "horizontal";
+lc2.x = am4core.percent(50);
+lc2.y = am4core.percent(88);
+lc2.horizontalCenter = "middle";
+
+let millerButton= lc2.createChild(am4core.TextLink);
+millerButton.margin(10,10,10,10);
+millerButton.text = "Miller";
+millerButton.events.on("hit", function(){
+    chart.projection = new am4maps.projections.Miller();
+    chart.panBehavior = "move";
+})
+
+let orthoButton= lc2.createChild(am4core.TextLink);
+orthoButton.margin(10,10,10,10);
+orthoButton.text = "Orthographic";
+orthoButton.events.on("hit", function(){
+    chart.projection = new am4maps.projections.Orthographic();
+    chart.panBehavior = "rotateLongLat";
 })
 
 });
