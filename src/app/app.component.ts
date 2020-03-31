@@ -861,6 +861,67 @@ gdpButton.events.on("hit", function(){
     polygonSeries.data = gdpData;
 })
 
+var tHex = "#3633d6";
+var randC = ["AF", "FR", "US", "CH", "YE"];
+var rc1 = 0;
+var rc2 = 0;
+var rc3 = 0;
+var rc4 = 0;
+var correct = 0;
+let testButton = linkContainer.createChild(am4core.TextLink);
+testButton.text = "Test";
+testButton.margin(10,10,10,10);
+testButton.events.on("hit", function(){
+    //chart.projection = new am4maps.projections.gdpButton();
+
+    rc1 = Math.floor(Math.random()*170);
+    do {
+      rc2 = Math.floor(Math.random()*170);
+    } while(rc2 == rc1);
+    do {
+      rc3 = Math.floor(Math.random()*170);
+    } while(rc3 == rc1 || rc3 == rc2);
+    do {
+      rc4 = Math.floor(Math.random()*170);
+    } while(rc4 == rc1 || rc4 == rc2 || rc4 == rc3);
+
+    correct = popData[rc1];
+    if(correct.value < popData[rc2].value)
+      correct = popData[rc2];
+    if(correct.value < popData[rc3].value)
+      correct = popData[rc3];
+    if(correct.value < popData[rc4].value)
+      correct = popData[rc4];
+
+    title.text = "" + popData[rc1].id + " " + popData[rc2].id + " " + popData[rc3].id + " " + popData[rc4].id;
+    polygonSeries.data = [{
+     "id": popData[rc1].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+     }, {
+     "id": popData[rc2].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+     }, {
+     "id": popData[rc3].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+     }, {
+     "id": popData[rc4].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+   }];
+   polygonTemplate.propertyFields.fill = "fill";
+   polygonTemplate.events.on("hit", function(ev) {
+     if(ev.target.dataItem.dataContext.id == correct.id) {
+       title.text = "Correct!"
+       ev.target.dataIten.dataContext.fill = am4core.color(60e645);
+     }
+     else
+      title.text = "Wrong"
+   })
+})
+
 let lc2 = chart.createChild(am4core.Container);
 lc2.isMeasured = false;
 lc2.layout = "horizontal";
