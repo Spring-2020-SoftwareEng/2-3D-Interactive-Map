@@ -616,6 +616,108 @@ mercator.events.on("hit", function(){
     polygonSeries.data = maData;
 })
 
+<<<<<<< Updated upstream
+=======
+let gdpButton = linkContainer.createChild(am4core.TextLink);
+gdpButton.text = "GDP (PPP)";
+gdpButton.margin(10,10,10,10);
+gdpButton.events.on("hit", function(){
+    //chart.projection = new am4maps.projections.gdpButton();
+    title.text = "GDP (PPP)"
+    polygonSeries.heatRules.push({
+      property: "fill",
+      target: polygonSeries.mapPolygons.template,
+      min: am4core.color("#ffffff"),
+      max: am4core.color("#60e645")
+    });
+    polygonSeries.data = gdpData;
+})
+
+var tHex = "#3633d6";
+var randC = ["AF", "FR", "US", "CH", "YE"];
+var rc1 = 0;
+var rc2 = 0;
+var rc3 = 0;
+var rc4 = 0;
+var correct = null;
+let testButton = linkContainer.createChild(am4core.TextLink);
+testButton.text = "Test";
+testButton.margin(10,10,10,10);
+testButton.events.on("hit", function(){
+    //chart.projection = new am4maps.projections.gdpButton();
+
+    rc1 = Math.floor(Math.random()*170);
+    do {
+      rc2 = Math.floor(Math.random()*170);
+    } while(rc2 == rc1);
+    do {
+      rc3 = Math.floor(Math.random()*170);
+    } while(rc3 == rc1 || rc3 == rc2);
+    do {
+      rc4 = Math.floor(Math.random()*170);
+    } while(rc4 == rc1 || rc4 == rc2 || rc4 == rc3);
+
+    correct = popData[rc1];
+    if(correct.value < popData[rc2].value)
+      correct = popData[rc2];
+    if(correct.value < popData[rc3].value)
+      correct = popData[rc3];
+    if(correct.value < popData[rc4].value)
+      correct = popData[rc4];
+
+    title.text = "" + popData[rc1].name + " | " + popData[rc2].name + " | " + popData[rc3].name + " | " + popData[rc4].name;
+    polygonSeries.data = [{
+     "id": popData[rc1].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+   }, {
+     "id": popData[rc2].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+     }, {
+     "id": popData[rc3].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+     }, {
+     "id": popData[rc4].id,
+     "value": 1,
+     "fill": am4core.color(tHex)
+   }];
+   polygonTemplate.propertyFields.fill = "fill";
+   polygonTemplate.events.on("hit", function(ev) {
+     if(ev.target.dataItem.dataContext.id == correct.id) {
+       title.text = "Correct!"
+       ev.target.dataItem.dataContext.fill = am4core.color("#60e645");
+     }
+     else
+      title.text = "Wrong"
+   })
+})
+
+let lc2 = chart.createChild(am4core.Container);
+lc2.isMeasured = false;
+lc2.layout = "horizontal";
+lc2.x = am4core.percent(50);
+lc2.y = am4core.percent(88);
+lc2.horizontalCenter = "middle";
+
+let millerButton= lc2.createChild(am4core.TextLink);
+millerButton.margin(10,10,10,10);
+millerButton.text = "Miller";
+millerButton.events.on("hit", function(){
+    chart.projection = new am4maps.projections.Miller();
+    chart.panBehavior = "move";
+})
+
+let orthoButton= lc2.createChild(am4core.TextLink);
+orthoButton.margin(10,10,10,10);
+orthoButton.text = "Orthographic";
+orthoButton.events.on("hit", function(){
+    chart.projection = new am4maps.projections.Orthographic();
+    chart.panBehavior = "rotateLongLat";
+})
+
+>>>>>>> Stashed changes
 });
 
 }
