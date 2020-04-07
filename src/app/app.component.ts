@@ -36,8 +36,11 @@ export class AppComponent {
 var chart = am4core.create("chartdiv", am4maps.MapChart);
 chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
+var orthoProj = new am4maps.projections.Orthographic();
+var millerProj = new am4maps.projections.Miller();
+
 chart.geodata = am4geodata_worldLow;
-chart.projection = new am4maps.projections.Orthographic();
+chart.projection = orthoProj;
 chart.deltaLatitude = -30;
 chart.panBehavior = "rotateLongLat";
 chart.marginTop = 20;
@@ -1052,7 +1055,7 @@ marker.propertyFields.href = "flag";
 imageSeriesTemplate.propertyFields.latitude = "latitude";
 imageSeriesTemplate.propertyFields.longitude = "longitude";
 
-imageSeries.data = [{"latitude": 48, "longitude": 2, "title": "paris", "flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"}]
+imageSeries.data = [{"latitude": 48.8, "longitude": 2.3, "title": "paris", "flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"}]
 
 let hs = polygonTemplate.states.create("hover");
 hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
@@ -1180,7 +1183,7 @@ let millerButton= lc2.createChild(am4core.TextLink);
 millerButton.margin(10,10,10,10);
 millerButton.text = "Miller";
 millerButton.events.on("hit", function(){
-    chart.projection = new am4maps.projections.Miller();
+    chart.projection = millerProj;
     chart.panBehavior = "move";
 })
 
@@ -1188,7 +1191,7 @@ let orthoButton= lc2.createChild(am4core.TextLink);
 orthoButton.margin(10,10,10,10);
 orthoButton.text = "Orthographic";
 orthoButton.events.on("hit", function(){
-    chart.projection = new am4maps.projections.Orthographic();
+    chart.projection = orthoProj;
     chart.panBehavior = "rotateLongLat";
 })
 
