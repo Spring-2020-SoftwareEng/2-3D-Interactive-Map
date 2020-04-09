@@ -1055,10 +1055,39 @@ marker.propertyFields.href = "flag";
 imageSeriesTemplate.propertyFields.latitude = "latitude";
 imageSeriesTemplate.propertyFields.longitude = "longitude";
 
-imageSeries.data = [{"latitude": 48.8, "longitude": 2.3, "title": "paris", "flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"}]
+imageSeries.data = [{"latitude": 48.8, "longitude": 2.3, "title": "Paris", "flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"}]
 
 let hs = polygonTemplate.states.create("hover");
 hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
+
+let testChoices = chart.createChild(am4core.Container);
+testChoices.isMeasured = false;
+testChoices.layout = "vertical";
+testChoices.x = am4core.percent(5);
+testChoices.y = am4core.percent(20);
+testChoices.horizontalCenter = "middle";
+
+let choice1 = testChoices.createChild(am4core.TextLink);
+choice1.margin(10,10,10,10);
+let choice2 = testChoices.createChild(am4core.TextLink);
+choice2.margin(10,10,10,10);
+let choice3 = testChoices.createChild(am4core.TextLink);
+choice3.margin(10,10,10,10);
+let choice4 = testChoices.createChild(am4core.TextLink);
+choice4.margin(10,10,10,10);
+
+function clearChoices() {
+  testChoices.disabled = true;
+}
+
+function choiceSelection(ind: number, cind: number) {
+  if(ind == cind) {
+    title.text = "Correct!";
+    polygonSeries.data = [{ "id": correct.id, "fill": am4core.color("#60e645")}];
+  }
+  else
+    title.text = "Wrong";
+}
 
 let linkContainer = chart.createChild(am4core.Container);
 linkContainer.isMeasured = false;
@@ -1067,11 +1096,12 @@ linkContainer.x = am4core.percent(95);
 linkContainer.y = am4core.percent(60);
 linkContainer.horizontalCenter = "middle";
 
-let popButton= linkContainer.createChild(am4core.TextLink);
+let popButton = linkContainer.createChild(am4core.TextLink);
 popButton.margin(10,10,10,10);
 popButton.text = "Population";
 popButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.Projection();
+    clearChoices();
     title.text = "Population"
     polygonSeries.heatRules.push({
       property: "fill",
@@ -1118,32 +1148,41 @@ var rc2 = 0;
 var rc3 = 0;
 var rc4 = 0;
 var correct = null;
+var cIndex = 0;
 let testButton = linkContainer.createChild(am4core.TextLink);
 testButton.text = "Test (prototype)";
 testButton.margin(10,10,10,10);
 testButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.gdpButton();
+    testChoices.disabled = false;
 
-    rc1 = Math.floor(Math.random()*170);
+    rc1 = Math.floor(Math.random()*224);
     do {
-      rc2 = Math.floor(Math.random()*170);
+      rc2 = Math.floor(Math.random()*224);
     } while(rc2 == rc1);
     do {
-      rc3 = Math.floor(Math.random()*170);
+      rc3 = Math.floor(Math.random()*224);
     } while(rc3 == rc1 || rc3 == rc2);
     do {
-      rc4 = Math.floor(Math.random()*170);
+      rc4 = Math.floor(Math.random()*224);
     } while(rc4 == rc1 || rc4 == rc2 || rc4 == rc3);
 
     correct = popData[rc1];
-    if(correct.value < popData[rc2].value)
+    cIndex = 0;
+    if(correct.value < popData[rc2].value) {
       correct = popData[rc2];
-    if(correct.value < popData[rc3].value)
+      cIndex = 1;
+    }
+    if(correct.value < popData[rc3].value) {
       correct = popData[rc3];
-    if(correct.value < popData[rc4].value)
+      cIndex = 2;
+    }
+    if(correct.value < popData[rc4].value) {
       correct = popData[rc4];
+      cIndex = 3;
+    }
 
-    title.text = "Select the highlighted country with the highest population\n\n" + popData[rc1].name + " | " + popData[rc2].name + " | " + popData[rc3].name + " | " + popData[rc4].name;
+    title.text = "Select the highlighted country with the highest population";
     polygonSeries.data = [{
      "id": popData[rc1].id,
      "value": 1,
@@ -1161,16 +1200,39 @@ testButton.events.on("hit", function(){
      "value": 1,
      "fill": am4core.color(tHex)
    }];
+
+   choice1.text = popData[rc1].name;
+   choice1.events.on("hit", function(){
+     choiceSelection(0, cIndex);
+   });
+
+   choice2.text = popData[rc2].name;
+   choice2.events.on("hit", function(){
+     choiceSelection(1, cIndex);
+   });
+
+   choice3.text = popData[rc3].name;
+   choice3.events.on("hit", function(){
+     choiceSelection(2, cIndex);
+   });
+
+   choice4.text = popData[rc4].name;
+   choice4.events.on("hit", function(){
+     choiceSelection(3, cIndex);
+   });
+
    polygonTemplate.propertyFields.fill = "fill";
    polygonTemplate.events.on("hit", function(ev) {
-     if(ev.target.dataItem.dataContext.id == correct.id) {
-       title.text = "Correct!"
-       polygonSeries.data = [{ "id": correct.id, "fill": am4core.color("#60e645")}];
-     }
-     else
-      title.text = "Wrong"
-   })
-})
+     if(testChoices.disabled == false) {
+       if(ev.target.dataItem.dataContext.id == correct.id) {
+         title.text = "Correct!";
+         polygonSeries.data = [{ "id": correct.id, "fill": am4core.color("#60e645")}];
+       }
+       else
+        title.text = "Wrong";
+      }
+   });
+});
 
 let lc2 = chart.createChild(am4core.Container);
 lc2.isMeasured = false;
@@ -1179,7 +1241,7 @@ lc2.x = am4core.percent(50);
 lc2.y = am4core.percent(88);
 lc2.horizontalCenter = "middle";
 
-let millerButton= lc2.createChild(am4core.TextLink);
+let millerButton = lc2.createChild(am4core.TextLink);
 millerButton.margin(10,10,10,10);
 millerButton.text = "Miller";
 millerButton.events.on("hit", function(){
@@ -1187,7 +1249,7 @@ millerButton.events.on("hit", function(){
     chart.panBehavior = "move";
 })
 
-let orthoButton= lc2.createChild(am4core.TextLink);
+let orthoButton = lc2.createChild(am4core.TextLink);
 orthoButton.margin(10,10,10,10);
 orthoButton.text = "Orthographic";
 orthoButton.events.on("hit", function(){
