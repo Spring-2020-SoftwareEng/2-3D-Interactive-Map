@@ -66,7 +66,7 @@ title.zIndex = 100;
 
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 var polygonTemplate = polygonSeries.mapPolygons.template;
-polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('#.0')}";
+polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('000,000')}";
 polygonSeries.heatRules.push({
   property: "fill",
   target: polygonSeries.mapPolygons.template,
@@ -103,244 +103,13 @@ function handleHover(mapPolygon) {
 }
 
 polygonSeries.mapPolygons.template.strokeOpacity = 0.4;
+
 polygonSeries.mapPolygons.template.events.on("out", event => {
   heatLegend.valueAxis.hideTooltip();
 });
 
 chart.zoomControl = new am4maps.ZoomControl();
 chart.zoomControl.valign = "top";
-
-/*var popData = [
-{ id: "AF", value: 36643815 },
-{ id: "AL", value: 3074579 },
-{ id: "DZ", value: 42972878 },
-{ id: "AS", value: 49437 },
-{ id: "AD", value: 77000 },
-{ id: "AO", value: 32522339 },
-{ id: "AI", value: 18090 },
-{ id: "AG", value: 98179 },
-{ id: "AR", value: 45479118 },
-{ id: "AM", value: 3021324 },
-{ id: "AW", value: 119428 },
-{ id: "AU", value: 25466459 },
-{ id: "AT", value: 8859449 },
-{ id: "AZ", value: 10205810 },
-{ id: "BS", value: 337721 },
-{ id: "BH", value: 1505003 },
-{ id: "BD", value: 162650853 },
-{ id: "BB", value: 294560 },
-{ id: "BY", value: 9477918 },
-{ id: "BE", value: 11720716 },
-{ id: "BZ", value: 399598 },
-{ id: "BJ", value: 12864634 },
-{ id: "BM", value: 71750 },
-{ id: "BT", value: 782318 },
-{ id: "BO", value: 11639909 },
-{ id: "BA", value: 3835586 },
-{ id: "BW", value: 2317233 },
-{ id: "BR", value: 211715973 },
-{ id: "VG", value: 37381 },
-{ id: "BN", value: 464478 },
-{ id: "BG", value: 6966899 },
-{ id: "BF", value: 20835401 },
-{ id: "MM", value: 56590071 },
-{ id: "BI", value: 11865821 },
-{ id: "CV", value: 583255 },
-{ id: "KH", value: 16926984 },
-{ id: "CM", value: 27744989 },
-{ id: "CA", value: 37694085 },
-{ id: "KY", value: 61944 },
-{ id: "CF", value: 5990855 },
-{ id: "TD", value: 16877357 },
-{ id: "CL", value: 18186770 },
-{ id: "CN", value: 1394015977 },
-{ id: "CO", value: 49084841 },
-{ id: "KM", value: 846281 },
-{ id: "CD", value: 101780263 },
-{ id: "CG", value: 5293070 },
-{ id: "CK", value: 8574 },
-{ id: "CR", value: 5097988 },
-{ id: "CI", value: 27481086 },
-{ id: "HR", value: 4227746 },
-{ id: "CU", value: 11059062 },
-{ id: "CW", value: 151345 },
-{ id: "CY", value: 1266676 },
-{ id: "CZ", value: 10702498 },
-{ id: "DK", value: 5869410 },
-{ id: "DJ", value: 921804 },
-{ id: "DM", value: 74243 },
-{ id: "DO", value: 10499707 },
-{ id: "EC", value: 16904867 },
-{ id: "EG", value: 104124440 },
-{ id: "SV", value: 6481102 },
-{ id: "GQ", value: 836178 },
-{ id: "ER", value: 6081196 },
-{ id: "EE", value: 1228624 },
-{ id: "SZ", value: 1104479 },
-{ id: "ET", value: 108113150 },
-{ id: "FO", value: 51628 },
-{ id: "FJ", value: 935974 },
-{ id: "FI", value: 5571665 },
-{ id: "FR", value: 67848156 },
-{ id: "PF", value: 295121 },
-{ id: "GA", value: 2230908 },
-{ id: "GM", value: 2173999 },
-{ id: "PS", value: 1918221 },
-{ id: "GE", value: 3997000 },
-{ id: "DE", value: 80159662 },
-{ id: "GH", value: 29340248 },
-{ id: "GI", value: 29581 },
-{ id: "GR", value: 10607051 },
-{ id: "GL", value: 57616 },
-{ id: "GD", value: 113094 },
-{ id: "GU", value: 168485 },
-{ id: "GT", value: 17153288 },
-{ id: "GG", value: 67052 },
-{ id: "GN", value: 12527440 },
-{ id: "GW", value: 1927104 },
-{ id: "GY", value: 750204 },
-{ id: "HT", value: 11067777 },
-{ id: "HN", value: 9235340 },
-{ id: "HK", value: 7249907 },
-{ id: "HU", value: 9771827 },
-{ id: "IS", value: 350734 },
-{ id: "IN", value: 1326093247 },
-{ id: "ID", value: 267026366 },
-{ id: "IR", value: 84923314 },
-{ id: "IQ", value: 38872655 },
-{ id: "IE", value: 5176569 },
-{ id: "IM", value: 90499 },
-{ id: "IL", value: 8675475 },
-{ id: "IT", value: 62402659 },
-{ id: "JM", value: 2808570 },
-{ id: "JP", value: 125507472 },
-{ id: "JE", value: 101073 },
-{ id: "JO", value: 10820644 },
-{ id: "KZ", value: 19091949 },
-{ id: "KE", value: 53527936 },
-{ id: "KI", value: 111796 },
-{ id: "KP", value: 25643466 },
-{ id: "KR", value: 51835110 },
-{ id: "XK", value: 1932774 },
-{ id: "KW", value: 2993706 },
-{ id: "KG", value: 5964897 },
-{ id: "LA", value: 7447396 },
-{ id: "LV", value: 1881232 },
-{ id: "LB", value: 5469612 },
-{ id: "LS", value: 1969334 },
-{ id: "LR", value: 5073296 },
-{ id: "LY", value: 6890535 },
-{ id: "LI", value: 39137 },
-{ id: "LT", value: 2731464 },
-{ id: "LU", value: 628381 },
-{ id: "MO", value: 614458 },
-{ id: "MG", value: 26955737 },
-{ id: "MW", value: 21196629 },
-{ id: "MY", value: 32652083 },
-{ id: "MV", value: 391904 },
-{ id: "ML", value: 19553397 },
-{ id: "MT", value: 457267 },
-{ id: "MH", value: 77917 },
-{ id: "MR", value: 4005475 },
-{ id: "MU", value: 1379365 },
-{ id: "MX", value: 128649565 },
-{ id: "FM", value: 102436 },
-{ id: "MD", value: 3364496 },
-{ id: "MC", value: 39000 },
-{ id: "MN", value: 3168026 },
-{ id: "ME", value: 609859 },
-{ id: "MS", value: 5373 },
-{ id: "MA", value: 35561654 },
-{ id: "MZ", value: 30098197 },
-{ id: "NA", value: 2630073 },
-{ id: "NR", value: 11000 },
-{ id: "NP", value: 30327877 },
-{ id: "NL", value: 17280397 },
-{ id: "NC", value: 290009 },
-{ id: "NZ", value: 4925477 },
-{ id: "NI", value: 6203441 },
-{ id: "NE", value: 22772361 },
-{ id: "NG", value: 214028302 },
-{ id: "MK", value: 2125971 },
-{ id: "MP", value: 51433 },
-{ id: "NO", value: 5467439 },
-{ id: "OM", value: 4664844 },
-{ id: "PK", value: 233500636 },
-{ id: "PW", value: 21685 },
-{ id: "PA", value: 3894082 },
-{ id: "PG", value: 7259456 },
-{ id: "PY", value: 7191685 },
-{ id: "PE", value: 31914989 },
-{ id: "PH", value: 109180815 },
-{ id: "PL", value: 38282325 },
-{ id: "PT", value: 10302674 },
-{ id: "PR", value: 3189068 },
-{ id: "QA", value: 2444174 },
-{ id: "RO", value: 21302893 },
-{ id: "RU", value: 141722205 },
-{ id: "RW", value: 12712431 },
-{ id: "BL", value: 7122 },
-{ id: "SH", value: 7862 },
-{ id: "KN", value: 53821 },
-{ id: "LC", value: 166487 },
-{ id: "MF", value: 32556 },
-{ id: "PM", value: 5347 },
-{ id: "VC", value: 101390 },
-{ id: "WS", value: 203774 },
-{ id: "SM", value: 34232 },
-{ id: "ST", value: 211122 },
-{ id: "SA", value: 34173498 },
-{ id: "SN", value: 15736368 },
-{ id: "RS", value: 7012165 },
-{ id: "SC", value: 95981 },
-{ id: "SL", value: 6624933 },
-{ id: "SG", value: 6209660 },
-{ id: "SX", value: 43847 },
-{ id: "SK", value: 5440602 },
-{ id: "SI", value: 2102678 },
-{ id: "SB", value: 685097 },
-{ id: "SO", value: 11757124 },
-{ id: "ZA", value: 56463617 },
-{ id: "SS", value: 10561244 },
-{ id: "ES", value: 50015792 },
-{ id: "LK", value: 22889201 },
-{ id: "SD", value: 45561556 },
-{ id: "SR", value: 609569 },
-{ id: "SE", value: 10202491 },
-{ id: "CH", value: 8403994 },
-{ id: "SY", value: 19398448 },
-{ id: "TW", value: 23603049 },
-{ id: "TJ", value: 8873669 },
-{ id: "TZ", value: 58552845 },
-{ id: "TH", value: 68977400 },
-{ id: "TL", value: 1383723 },
-{ id: "TG", value: 8608444 },
-{ id: "TO", value: 106095 },
-{ id: "TT", value: 1208789 },
-{ id: "TN", value: 11721177 },
-{ id: "TR", value: 82017514 },
-{ id: "TM", value: 5528627 },
-{ id: "TC", value: 55926 },
-{ id: "TV", value: 11342 },
-{ id: "UG", value: 43252966 },
-{ id: "UA", value: 43922939 },
-{ id: "AE", value: 9992083 },
-{ id: "GB", value: 65761117 },
-{ id: "US", value: 332639102 },
-{ id: "UY", value: 3387605 },
-{ id: "UZ", value: 30565411 },
-{ id: "VU", value: 298333 },
-{ id: "VE", value: 28644603 },
-{ id: "VN", value: 98721275 },
-{ id: "VI", value: 106235 },
-{ id: "WF", value: 15854 },
-{ id: "PS", value: 2900034 },
-{ id: "EH", value: 652271 },
-{ id: "YE", value: 29884405 },
-{ id: "ZM", value: 17426623 },
-{ id: "ZW", value: 14546314 }
-
-];*/
 
 var popData = [
   { id: "AF", value: 36643815, "flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AF-flag.gif" },
@@ -1083,11 +852,37 @@ function clearChoices() {
 function choiceSelection(ind: number, cind: number) {
   if(ind == cind) {
     title.text = "Correct!";
-    polygonSeries.data = [{ "id": correct.id, "fill": am4core.color("#60e645")}];
+    polygonSeries.data[cind].fill = am4core.color("#60e645");
+    polygonSeries.invalidateData();
   }
   else
     title.text = "Wrong";
 }
+
+let outlineC = chart.createChild(am4core.Container);
+outlineC.isMeasured = false;
+outlineC.layout = "vertical";
+outlineC.x = am4core.percent(5);
+outlineC.y = am4core.percent(70);
+outlineC.horizontalCenter = "middle";
+
+var outT = false;
+
+let outlineButton = outlineC.createChild(am4core.TextLink);
+outlineButton.margin(10,10,10,10);
+outlineButton.text = "Outline toggle";
+outlineButton.events.on("hit", function(){
+    //chart.projection = new am4maps.projections.Projection();
+    if(outT == false) {
+      polygonSeries.mapPolygons.template.stroke = "black";
+      outT = true;
+    }
+    else {
+      polygonSeries.mapPolygons.template.stroke = "white";
+      outT = false;
+    }
+    polygonSeries.invalidateData();
+})
 
 let linkContainer = chart.createChild(am4core.Container);
 linkContainer.isMeasured = false;
@@ -1103,6 +898,7 @@ popButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.Projection();
     clearChoices();
     title.text = "Population"
+    polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('000,000')}";
     polygonSeries.heatRules.push({
       property: "fill",
       target: polygonSeries.mapPolygons.template,
@@ -1117,7 +913,9 @@ maButton.text = "Median Age";
 maButton.margin(10,10,10,10);
 maButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.maButton();
+    clearChoices();
     title.text = "Median Age"
+    polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('0.0')}";
     polygonSeries.heatRules.push({
       property: "fill",
       target: polygonSeries.mapPolygons.template,
@@ -1132,7 +930,9 @@ gdpButton.text = "GDP (PPP)";
 gdpButton.margin(10,10,10,10);
 gdpButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.gdpButton();
+    clearChoices();
     title.text = "GDP (PPP)"
+    polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('000,000')}";
     polygonSeries.heatRules.push({
       property: "fill",
       target: polygonSeries.mapPolygons.template,
@@ -1155,6 +955,7 @@ testButton.margin(10,10,10,10);
 testButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.gdpButton();
     testChoices.disabled = false;
+    polygonTemplate.tooltipText = "{name}";
 
     rc1 = Math.floor(Math.random()*224);
     do {
@@ -1226,7 +1027,9 @@ testButton.events.on("hit", function(){
      if(testChoices.disabled == false) {
        if(ev.target.dataItem.dataContext.id == correct.id) {
          title.text = "Correct!";
-         polygonSeries.data = [{ "id": correct.id, "fill": am4core.color("#60e645")}];
+         polygonSeries.data[cIndex].fill = am4core.color("#60e645");
+         polygonSeries.invalidateData();
+         console.log(popData[rc1].name + ": " + popData[rc1].value + ", " + popData[rc2].name + ": " + popData[rc2].value + ", " + popData[rc3].name + ": " + popData[rc3].value + ", " + popData[rc4].name + ": " + popData[rc4].value);
        }
        else
         title.text = "Wrong";
