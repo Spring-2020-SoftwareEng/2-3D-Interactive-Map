@@ -11,8 +11,13 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@amcharts/amcharts4": "^4.9.13",
     "@amcharts/amcharts4-geodata": "^4.1.11",
+=======
+    "@amcharts/amcharts4": "^4.9.0",
+    "@amcharts/amcharts4-geodata": "^4.1.12",
+>>>>>>> Roy
     "@angular/animations": "~9.0.0",
     "@angular/common": "~9.0.0",
     "@angular/compiler": "~9.0.0",
