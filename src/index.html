@@ -7,7 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Population</a>
+  <a href="#">Median Age</a>
+  <a href="#">GDP (PPP)</a>
+  <a href="#">Test (Prodotype)</a>
+</div>
+
+<span style="font-size:16px;cursor:pointer" onclick="openNav()">MENU</span>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
 <body>
   <app-root></app-root>
 </body>
+
 </html>
