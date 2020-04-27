@@ -27,7 +27,8 @@ Our project utilizes a webscraper created in Python to collect relevant informat
  <picture of UML>
 
 # State Chart Diagram
-<picture of State>
+ ![StateChart](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Statechart.png)
+
   
  
   
