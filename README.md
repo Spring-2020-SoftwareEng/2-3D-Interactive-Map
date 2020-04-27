@@ -28,14 +28,3 @@ Our project utilizes a webscraper created in Python to collect relevant informat
 
 # State Chart Diagram
  ![StateChart](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Statechart.png)
-
-  
- 
-  
-
-
-
-
-
-
-
