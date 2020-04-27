@@ -10,10 +10,8 @@ Our project utilizes a webscraper created in Python to collect relevant informat
 ## Features
 * Map Outline
   *The map has an outline feature that allows a user to toggle an outline across all the heatmaps in both map modes to provide users an easier method of differentiating between nations on certain map modes
-
 *Heatmaps
   *Our map has an array of multiple colored Heatmaps that the user can select from which are usable in both a flat Miller style map or a rotatable Orthographic globe. The map allows for a user to select between population, GDP, and Median Age all of which are displayed in a different color.  <Map type Images and examples>
-  
 *Test Function
   *Our most impressive feature is our Test function which starts a test that will quiz you over all the different heatmaps, such as asking which country has the highest GDP, which country has the lowest population, etc, provides the user an educational way to learn about geographic regions of the world and their statistics.  <maps of test examples>
   
