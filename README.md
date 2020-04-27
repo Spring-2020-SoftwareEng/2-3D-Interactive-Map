@@ -21,6 +21,7 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   
 * Test Function
   * Our most impressive feature is our Test function which starts a test that will quiz you over all the different heatmaps, such as asking which country has the highest GDP, which country has the lowest population, etc, provides the user an educational way to learn about geographic regions of the world and their statistics.  <maps of test examples>
+  * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/test%20wide%20miller.png) ![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc.gif) 
   
 # UML Diagram
  <picture of UML>
