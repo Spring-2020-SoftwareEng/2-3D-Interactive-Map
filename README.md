@@ -17,10 +17,8 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   
 * Heatmaps
   * Our map has an array of multiple colored Heatmaps that the user can select from which are usable in both a flat Miller style map or a rotatable Orthographic globe. The map allows for a user to select between population, GDP, and Median Age all of which are displayed in a different color.  <Map type Images and examples>
-  * Median Age Map
-   * ![Median2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Median%20age%20miller.png)
-  * Population Map
-   * ![Pop2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Population%20pic.png)
+  * Median Age Map ![Median2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Median%20age%20miller.png)
+  * Population Map ![Pop2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Population%20pic.png)
   * GDP Map ![GDP2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/gdp%20miller.png)
   
 * Test Function
