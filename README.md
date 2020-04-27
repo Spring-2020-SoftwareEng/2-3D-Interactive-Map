@@ -10,10 +10,8 @@ Our project utilizes a webscraper created in Python to collect relevant informat
 ## Features
 * Map Outline
   * The map has an outline feature that allows a user to toggle an outline across all the heatmaps in both map modes to provide users an easier method of differentiating between nations on certain map modes 
-  * With Outline
-   * ![Outline](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Outline.png)
-  * Without Outline
-   * ![W/Outline](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/nooutline.png)
+  * With Outline ![Outline](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Outline.png)
+  * Without Outline ![W/Outline](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/nooutline.png)
   
 * Heatmaps
   * Our map has an array of multiple colored Heatmaps that the user can select from which are usable in both a flat Miller style map or a rotatable Orthographic globe. The map allows for a user to select between population, GDP, and Median Age all of which are displayed in a different color.  <Map type Images and examples>
