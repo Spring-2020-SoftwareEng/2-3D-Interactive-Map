@@ -22,7 +22,7 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest1.png) ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest2.png)![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc.gif) 
 
 * Settings
-  * We have added a settings menu in which a user can choose how detailed the map is with the options being Low, High, Ultra.  The settings menu also comes with the ability to toggle if the map should display every countries flag. 
+  * We have added a settings menu which comes with some options to accomadate various types of user. In settings we allow the user to determine how detailed the map is with the options Low, High, and Ultra. The settings menu also comes with the ability to toggle if the map should display every countries flag. 
   * ![Settings](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millerSettings.png) ![SettingsAlt](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millerSettingsalt.png)
   
 # UML Diagram
