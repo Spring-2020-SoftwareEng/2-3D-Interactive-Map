@@ -33,3 +33,13 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span').textContent).toContain('my-app app is running!');
   });
 });
+
+// miller
+describe('millerButton', () => {
+  it('Change projection to miller', () => {
+
+    chart.projection = millerProj;
+    expect(chart.projection).to.equal('millerProj');
+
+  });
+});
