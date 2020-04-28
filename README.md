@@ -17,9 +17,13 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   * Our map has an array of multiple colored Heatmaps that the user can select from which are usable in both a flat Miller style map or a rotatable Orthographic globe. The map allows for a user to select between Population, Median Age, GDP, Birth rate, Death Rate, Population Growth, and Labor Force all of which the user can select to color either red, blue, green, and yellow. 
   * Examples of Map Modes ![Median2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Median%20age%20miller.png) ![Pop2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Population%20pic.png)
   
-* Test Function
-  * Our most impressive feature is our Test function which starts a test that will quiz you over all the different heatmaps, such as asking which country has the highest GDP, which country has the lowest population, etc, which provides the user an educational way to learn about geographic regions and their statistics.  <maps of test examples>
+* Data Quiz
+  * Our most impressive feature is our Data Quiz which starts a test that will quiz the user over all the different heatmaps, such as asking which country has the highest GDP, which country has the lowest population, etc, which provides the user an educational way to learn about geographic regions and their statistics. The quiz will also keep track of how many question you have answered correctly by displaying your current score.  <maps of test examples>
   * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest1.png) ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest2.png)![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc.gif) 
+
+* Settings
+  * We have added a settings menu in which a user can choose how detailed the map is with the options being Low, High, Ultra.  The settings menu also comes with the ability to toggle if the map should display every countries flag. 
+  * ![Settings](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millerSettings.png) ![SettingsAlt](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millerSettingsalt.png)
   
 # UML Diagram
  <picture of UML>
