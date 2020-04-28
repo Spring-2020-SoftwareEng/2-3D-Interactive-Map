@@ -14,14 +14,12 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   * Without Outline ![W/Outline](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/nooutline.png)
   
 * Heatmaps
-  * Our map has an array of multiple colored Heatmaps that the user can select from which are usable in both a flat Miller style map or a rotatable Orthographic globe. The map allows for a user to select between population, GDP, and Median Age all of which are displayed in a different color. 
-  * Median Age Map ![Median2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Median%20age%20miller.png)
-  * Population Map ![Pop2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Population%20pic.png)
-  * GDP Map ![GDP2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/gdp%20miller.png)
+  * Our map has an array of multiple colored Heatmaps that the user can select from which are usable in both a flat Miller style map or a rotatable Orthographic globe. The map allows for a user to select between Population, Median Age, GDP, Birth rate, Death Rate, Population Growth, and Labor Force all of which the user can select to color either red, blue, green, and yellow. 
+  * Examples of Map Modes ![Median2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Median%20age%20miller.png) ![Pop2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Population%20pic.png)
   
 * Test Function
   * Our most impressive feature is our Test function which starts a test that will quiz you over all the different heatmaps, such as asking which country has the highest GDP, which country has the lowest population, etc, which provides the user an educational way to learn about geographic regions and their statistics.  <maps of test examples>
-  * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/test%20wide%20miller.png) ![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc.gif) 
+  * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest1.png) ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest2.png)![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc.gif) 
   
 # UML Diagram
  <picture of UML>
