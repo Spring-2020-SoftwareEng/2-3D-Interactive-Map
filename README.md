@@ -19,7 +19,7 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   
 * Data Quiz
   * Our most impressive feature is our Data Quiz which starts a test that will quiz the user over all the different heatmaps, such as asking which country has the highest GDP, which country has the lowest population, etc, which provides the user an educational way to learn about geographic regions and their statistics. The quiz will also keep track of how many question you have answered correctly by displaying your current score.  <maps of test examples>
-  * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest1.png) ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest2.png)![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc.gif) 
+  * Test Examples  ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest1.png) ![Test2D](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millertest2.png) ![Testgif](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/TestFunc1.gif) 
 
 * Settings
   * We have added a settings menu which comes with some options to accomadate various types of user. In settings we allow the user to determine how detailed the map is with the options Low, High, and Ultra. The settings menu also comes with the ability to toggle if the map should display every countries flag. 
