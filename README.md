@@ -26,7 +26,7 @@ Our project utilizes a webscraper created in Python to collect relevant informat
   * ![Settings](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millerSettings.png) ![SettingsAlt](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/millerSettingsalt.png)
   
 # UML Diagram
- <picture of UML>
+ ![UML](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/UML.jpeg)
 
 # State Chart Diagram
  ![StateChart](https://github.com/Spring-2020-SoftwareEng/2-3D-Interactive-Map/blob/test/MapImages/Statechart.png)
