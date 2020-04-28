@@ -4,7 +4,7 @@ For our CS4398 project we have created an interactive map using a combination of
   The Interactive map comes with various types of information about each country such as GDP, Population, Median Age, etc, with all information being sourced and scraped from CIA.gov since they have reliable updated information about every country.  
  
 ## WebScraper
-Our project utilizes a webscraper created in Python to collect relevant information and filter out unneccesary information.  Once the Webscraper locates relevant information it formats the CIA's data into data that we can use as numerical data such as replacing the word million with six zeros and other optimizations that allows for quick processing of data. While the data is being processed it is also being stored into a corresponding text file that is formated in a style that is used by our map library amCharts.  
+Our project utilizes a webscraper created in Python to collect relevant information and filter out unneccesary information.  Once the Webscraper locates relevant information it formats the CIA's data into data that we can use as numerical data such as replacing the word million with six zeros and other optimizations that allows for quick processing of data. While the data is being processed it is also being stored into a corresponding text file that is formated into a usable Json format that is used by our map library amCharts.  
 <image of scraped files>
   
 ## Features
