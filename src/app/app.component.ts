@@ -27,9 +27,9 @@ am4core.useTheme(am4themes_animated);
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  private chart: am4charts.XYChart;
+  public chart: am4charts.XYChart;
 
-  private title: "Interactive Map"
+  public title: "my-app"
 
   constructor(private zone: NgZone) {}
 
@@ -77,7 +77,7 @@ polygonSeries.heatRules.push({
 
 polygonSeries.useGeodata = true;
 
-var tipMode = 0;
+var tipMode = 3;
 var polygonTemplate = polygonSeries.mapPolygons.template;
 polygonTemplate.setStateOnChildren = true;
 polygonTemplate.adapter.add("tooltipText", function(text, target) {
@@ -92,6 +92,8 @@ polygonTemplate.adapter.add("tooltipText", function(text, target) {
       return "{name}";
     case 4:
       return "{name}: {value.value.formatNumber('0.0')}/1000 population"
+    case 5:
+      return ""
   }
 });
 
@@ -167,6 +169,7 @@ let worldData = [{
 	"population": 36643815,
 	"median age": 19.5,
 	"GDP(PPP)": 69450000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AF-flag.gif"
 }, {
 	"id": "AL",
@@ -181,6 +184,7 @@ let worldData = [{
 	"population": 3074579,
 	"median age": 34.3,
 	"GDP(PPP)": 36010000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AL-flag.gif"
 }, {
 	"id": "DZ",
@@ -195,6 +199,7 @@ let worldData = [{
 	"population": 42972878,
 	"median age": 28.9,
 	"GDP(PPP)": 630000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AG-flag.gif"
 }, {
 	"id": "AS",
@@ -209,6 +214,7 @@ let worldData = [{
 	"population": 49437,
 	"median age": 27.2,
 	"GDP(PPP)": 658000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AQ-flag.gif"
 }, {
 	"id": "AD",
@@ -223,6 +229,7 @@ let worldData = [{
 	"population": 77000,
 	"median age": 46.2,
 	"GDP(PPP)": 3327000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AN-flag.gif"
 }, {
 	"id": "AO",
@@ -237,6 +244,7 @@ let worldData = [{
 	"population": 32522339,
 	"median age": 15.9,
 	"GDP(PPP)": 193600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AO-flag.gif"
 }, {
 	"id": "AI",
@@ -251,6 +259,7 @@ let worldData = [{
 	"population": 18090,
 	"median age": 35.7,
 	"GDP(PPP)": 175400000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AV-flag.gif"
 }, {
 	"id": "AG",
@@ -265,6 +274,7 @@ let worldData = [{
 	"population": 98179,
 	"median age": 32.7,
 	"GDP(PPP)": 2398000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AC-flag.gif"
 }, {
 	"id": "AR",
@@ -279,6 +289,7 @@ let worldData = [{
 	"population": 45479118,
 	"median age": 32.4,
 	"GDP(PPP)": 922100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AR-flag.gif"
 }, {
 	"id": "AM",
@@ -293,6 +304,7 @@ let worldData = [{
 	"population": 3021324,
 	"median age": 36.6,
 	"GDP(PPP)": 28340000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AM-flag.gif"
 }, {
 	"id": "AW",
@@ -307,6 +319,7 @@ let worldData = [{
 	"population": 119428,
 	"median age": 39.9,
 	"GDP(PPP)": 4158000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AA-flag.gif"
 }, {
 	"id": "AU",
@@ -321,6 +334,7 @@ let worldData = [{
 	"population": 25466459,
 	"median age": 37.5,
 	"GDP(PPP)": 1248000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AS-flag.gif"
 }, {
 	"id": "AT",
@@ -335,6 +349,7 @@ let worldData = [{
 	"population": 8859449,
 	"median age": 44.5,
 	"GDP(PPP)": 441000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AU-flag.gif"
 }, {
 	"id": "AZ",
@@ -349,6 +364,7 @@ let worldData = [{
 	"population": 10205810,
 	"median age": 32.6,
 	"GDP(PPP)": 172200000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AJ-flag.gif"
 }, {
 	"id": "BS",
@@ -363,6 +379,7 @@ let worldData = [{
 	"population": 337721,
 	"median age": 32.8,
 	"GDP(PPP)": 12060000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BF-flag.gif"
 }, {
 	"id": "BH",
@@ -377,6 +394,7 @@ let worldData = [{
 	"population": 1505003,
 	"median age": 32.9,
 	"GDP(PPP)": 71170000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BA-flag.gif"
 }, {
 	"id": "BD",
@@ -391,6 +409,7 @@ let worldData = [{
 	"population": 162650853,
 	"median age": 27.9,
 	"GDP(PPP)": 690300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BG-flag.gif"
 }, {
 	"id": "BB",
@@ -405,6 +424,7 @@ let worldData = [{
 	"population": 294560,
 	"median age": 39.5,
 	"GDP(PPP)": 5218000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BB-flag.gif"
 }, {
 	"id": "BY",
@@ -419,6 +439,7 @@ let worldData = [{
 	"population": 9477918,
 	"median age": 40.9,
 	"GDP(PPP)": 179400000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BO-flag.gif"
 }, {
 	"id": "BE",
@@ -433,6 +454,7 @@ let worldData = [{
 	"population": 11720716,
 	"median age": 41.6,
 	"GDP(PPP)": 529200000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BE-flag.gif"
 }, {
 	"id": "BZ",
@@ -447,6 +469,7 @@ let worldData = [{
 	"population": 399598,
 	"median age": 23.9,
 	"GDP(PPP)": 3218000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BH-flag.gif"
 }, {
 	"id": "BJ",
@@ -461,6 +484,7 @@ let worldData = [{
 	"population": 12864634,
 	"median age": 17,
 	"GDP(PPP)": 25390000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BN-flag.gif"
 }, {
 	"id": "BM",
@@ -475,6 +499,7 @@ let worldData = [{
 	"population": 71750,
 	"median age": 43.6,
 	"GDP(PPP)": 6127000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BD-flag.gif"
 }, {
 	"id": "BT",
@@ -489,6 +514,7 @@ let worldData = [{
 	"population": 782318,
 	"median age": 29.1,
 	"GDP(PPP)": 7205000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BT-flag.gif"
 }, {
 	"id": "BO",
@@ -503,6 +529,7 @@ let worldData = [{
 	"population": 11639909,
 	"median age": 25.3,
 	"GDP(PPP)": 83720000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BL-flag.gif"
 }, {
 	"id": "BA",
@@ -517,6 +544,7 @@ let worldData = [{
 	"population": 3835586,
 	"median age": 43.3,
 	"GDP(PPP)": 44830000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BK-flag.gif"
 }, {
 	"id": "BW",
@@ -531,6 +559,7 @@ let worldData = [{
 	"population": 2317233,
 	"median age": 25.7,
 	"GDP(PPP)": 39010000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BC-flag.gif"
 }, {
 	"id": "BR",
@@ -545,6 +574,7 @@ let worldData = [{
 	"population": 211715973,
 	"median age": 33.2,
 	"GDP(PPP)": 3248000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BR-flag.gif"
 }, {
 	"id": "VG",
@@ -559,6 +589,7 @@ let worldData = [{
 	"population": 37381,
 	"median age": 37.2,
 	"GDP(PPP)": 500000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VI-flag.gif"
 }, {
 	"id": "BN",
@@ -573,6 +604,7 @@ let worldData = [{
 	"population": 464478,
 	"median age": 31.1,
 	"GDP(PPP)": 33870000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BX-flag.gif"
 }, {
 	"id": "BG",
@@ -587,6 +619,7 @@ let worldData = [{
 	"population": 6966899,
 	"median age": 43.7,
 	"GDP(PPP)": 153500000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BU-flag.gif"
 }, {
 	"id": "BF",
@@ -601,6 +634,7 @@ let worldData = [{
 	"population": 20835401,
 	"median age": 17.9,
 	"GDP(PPP)": 35850000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UV-flag.gif"
 }, {
 	"id": "MM",
@@ -615,6 +649,7 @@ let worldData = [{
 	"population": 56590071,
 	"median age": 29.2,
 	"GDP(PPP)": 329800000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BM-flag.gif"
 }, {
 	"id": "BI",
@@ -629,6 +664,7 @@ let worldData = [{
 	"population": 11865821,
 	"median age": 17.7,
 	"GDP(PPP)": 8007000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BY-flag.gif"
 }, {
 	"id": "CV",
@@ -643,6 +679,7 @@ let worldData = [{
 	"population": 583255,
 	"median age": 26.8,
 	"GDP(PPP)": 3777000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CV-flag.gif"
 }, {
 	"id": "KH",
@@ -657,6 +694,7 @@ let worldData = [{
 	"population": 16926984,
 	"median age": 26.4,
 	"GDP(PPP)": 64210000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CB-flag.gif"
 }, {
 	"id": "CM",
@@ -671,6 +709,7 @@ let worldData = [{
 	"population": 27744989,
 	"median age": 18.5,
 	"GDP(PPP)": 89540000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CM-flag.gif"
 }, {
 	"id": "CA",
@@ -685,6 +724,7 @@ let worldData = [{
 	"population": 37694085,
 	"median age": 41.8,
 	"GDP(PPP)": 1774000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CA-flag.gif"
 }, {
 	"id": "KY",
@@ -699,6 +739,7 @@ let worldData = [{
 	"population": 61944,
 	"median age": 40.5,
 	"GDP(PPP)": 2507000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CJ-flag.gif"
 }, {
 	"id": "CF",
@@ -713,6 +754,7 @@ let worldData = [{
 	"population": 5990855,
 	"median age": 20,
 	"GDP(PPP)": 3390000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CT-flag.gif"
 }, {
 	"id": "TD",
@@ -727,6 +769,7 @@ let worldData = [{
 	"population": 16877357,
 	"median age": 16.1,
 	"GDP(PPP)": 28620000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CD-flag.gif"
 }, {
 	"id": "CL",
@@ -741,6 +784,7 @@ let worldData = [{
 	"population": 18186770,
 	"median age": 35.5,
 	"GDP(PPP)": 452100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CI-flag.gif"
 }, {
 	"id": "CN",
@@ -755,6 +799,7 @@ let worldData = [{
 	"population": 1394015977,
 	"median age": 38.4,
 	"GDP(PPP)": 25360000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CH-flag.gif"
 }, {
 	"id": "CO",
@@ -769,6 +814,7 @@ let worldData = [{
 	"population": 49084841,
 	"median age": 31.2,
 	"GDP(PPP)": 711600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CO-flag.gif"
 }, {
 	"id": "KM",
@@ -783,6 +829,7 @@ let worldData = [{
 	"population": 846281,
 	"median age": 20.9,
 	"GDP(PPP)": 1319000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CN-flag.gif"
 }, {
 	"id": "CD",
@@ -797,6 +844,7 @@ let worldData = [{
 	"population": 101780263,
 	"median age": 16.7,
 	"GDP(PPP)": 68600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CG-flag.gif"
 }, {
 	"id": "CG",
@@ -811,6 +859,7 @@ let worldData = [{
 	"population": 5293070,
 	"median age": 19.5,
 	"GDP(PPP)": 29390000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CF-flag.gif"
 }, {
 	"id": "CK",
@@ -825,6 +874,7 @@ let worldData = [{
 	"population": 8574,
 	"median age": 38.3,
 	"GDP(PPP)": 299900000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CW-flag.gif"
 }, {
 	"id": "CR",
@@ -839,6 +889,7 @@ let worldData = [{
 	"population": 5097988,
 	"median age": 32.6,
 	"GDP(PPP)": 83940000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CS-flag.gif"
 }, {
 	"id": "CI",
@@ -853,6 +904,7 @@ let worldData = [{
 	"population": 27481086,
 	"median age": 20.3,
 	"GDP(PPP)": 97160000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IV-flag.gif"
 }, {
 	"id": "HR",
@@ -867,6 +919,7 @@ let worldData = [{
 	"population": 4227746,
 	"median age": 43.9,
 	"GDP(PPP)": 102100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HR-flag.gif"
 }, {
 	"id": "CU",
@@ -881,6 +934,7 @@ let worldData = [{
 	"population": 11059062,
 	"median age": 42.1,
 	"GDP(PPP)": 137000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CU-flag.gif"
 }, {
 	"id": "CW",
@@ -895,6 +949,7 @@ let worldData = [{
 	"population": 151345,
 	"median age": 36.7,
 	"GDP(PPP)": 3128000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UC-flag.gif"
 }, {
 	"id": "CY",
@@ -909,6 +964,7 @@ let worldData = [{
 	"population": 1266676,
 	"median age": 37.9,
 	"GDP(PPP)": 31780000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CY-flag.gif"
 }, {
 	"id": "CZ",
@@ -923,6 +979,7 @@ let worldData = [{
 	"population": 10702498,
 	"median age": 43.3,
 	"GDP(PPP)": 375900000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EZ-flag.gif"
 }, {
 	"id": "DK",
@@ -937,6 +994,7 @@ let worldData = [{
 	"population": 5869410,
 	"median age": 42,
 	"GDP(PPP)": 287800000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DA-flag.gif"
 }, {
 	"id": "DJ",
@@ -951,6 +1009,7 @@ let worldData = [{
 	"population": 921804,
 	"median age": 24.9,
 	"GDP(PPP)": 3640000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DJ-flag.gif"
 }, {
 	"id": "DM",
@@ -965,6 +1024,7 @@ let worldData = [{
 	"population": 74243,
 	"median age": 34.9,
 	"GDP(PPP)": 783000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DO-flag.gif"
 }, {
 	"id": "DO",
@@ -979,6 +1039,7 @@ let worldData = [{
 	"population": 10499707,
 	"median age": 27.9,
 	"GDP(PPP)": 173000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DR-flag.gif"
 }, {
 	"id": "EC",
@@ -993,6 +1054,7 @@ let worldData = [{
 	"population": 16904867,
 	"median age": 28.8,
 	"GDP(PPP)": 193000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EC-flag.gif"
 }, {
 	"id": "EG",
@@ -1007,6 +1069,7 @@ let worldData = [{
 	"population": 104124440,
 	"median age": 24.1,
 	"GDP(PPP)": 1204000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EG-flag.gif"
 }, {
 	"id": "SV",
@@ -1021,6 +1084,7 @@ let worldData = [{
 	"population": 6481102,
 	"median age": 27.7,
 	"GDP(PPP)": 51170000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ES-flag.gif"
 }, {
 	"id": "GQ",
@@ -1035,6 +1099,7 @@ let worldData = [{
 	"population": 836178,
 	"median age": 20.3,
 	"GDP(PPP)": 31520000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EK-flag.gif"
 }, {
 	"id": "ER",
@@ -1049,6 +1114,7 @@ let worldData = [{
 	"population": 6081196,
 	"median age": 20.3,
 	"GDP(PPP)": 9402000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ER-flag.gif"
 }, {
 	"id": "EE",
@@ -1063,6 +1129,7 @@ let worldData = [{
 	"population": 1228624,
 	"median age": 43.7,
 	"GDP(PPP)": 41650000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EN-flag.gif"
 }, {
 	"id": "SZ",
@@ -1077,6 +1144,7 @@ let worldData = [{
 	"population": 1104479,
 	"median age": 23.7,
 	"GDP(PPP)": 11600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WZ-flag.gif"
 }, {
 	"id": "ET",
@@ -1091,6 +1159,7 @@ let worldData = [{
 	"population": 108113150,
 	"median age": 19.8,
 	"GDP(PPP)": 200600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ET-flag.gif"
 }, {
 	"id": "FO",
@@ -1105,6 +1174,7 @@ let worldData = [{
 	"population": 51628,
 	"median age": 37.2,
 	"GDP(PPP)": 2001000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FO-flag.gif"
 }, {
 	"id": "FJ",
@@ -1119,6 +1189,7 @@ let worldData = [{
 	"population": 935974,
 	"median age": 29.9,
 	"GDP(PPP)": 8629000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FJ-flag.gif"
 }, {
 	"id": "FI",
@@ -1133,6 +1204,7 @@ let worldData = [{
 	"population": 5571665,
 	"median age": 42.8,
 	"GDP(PPP)": 244900000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FI-flag.gif"
 }, {
 	"id": "FR",
@@ -1147,6 +1219,7 @@ let worldData = [{
 	"population": 67848156,
 	"median age": 41.7,
 	"GDP(PPP)": 2856000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"
 }, {
 	"id": "PF",
@@ -1161,6 +1234,7 @@ let worldData = [{
 	"population": 295121,
 	"median age": 33.3,
 	"GDP(PPP)": 5490000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FP-flag.gif"
 }, {
 	"id": "GA",
@@ -1175,6 +1249,7 @@ let worldData = [{
 	"population": 2230908,
 	"median age": 21,
 	"GDP(PPP)": 36660000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GB-flag.gif"
 }, {
 	"id": "GM",
@@ -1189,6 +1264,7 @@ let worldData = [{
 	"population": 2173999,
 	"median age": 21.8,
 	"GDP(PPP)": 5556000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GA-flag.gif"
 }, {
 	"id": "GE",
@@ -1203,6 +1279,7 @@ let worldData = [{
 	"population": 3997000,
 	"median age": 38.6,
 	"GDP(PPP)": 39850000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GG-flag.gif"
 }, {
 	"id": "DE",
@@ -1217,6 +1294,7 @@ let worldData = [{
 	"population": 80159662,
 	"median age": 47.8,
 	"GDP(PPP)": 4199000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GM-flag.gif"
 }, {
 	"id": "GH",
@@ -1231,6 +1309,7 @@ let worldData = [{
 	"population": 29340248,
 	"median age": 21.4,
 	"GDP(PPP)": 134000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GH-flag.gif"
 }, {
 	"id": "GI",
@@ -1245,6 +1324,7 @@ let worldData = [{
 	"population": 29581,
 	"median age": 35.5,
 	"GDP(PPP)": 2044000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GI-flag.gif"
 }, {
 	"id": "GR",
@@ -1259,6 +1339,7 @@ let worldData = [{
 	"population": 10607051,
 	"median age": 45.3,
 	"GDP(PPP)": 299300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GR-flag.gif"
 }, {
 	"id": "GL",
@@ -1273,6 +1354,7 @@ let worldData = [{
 	"population": 57616,
 	"median age": 34.3,
 	"GDP(PPP)": 2413000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GL-flag.gif"
 }, {
 	"id": "GD",
@@ -1287,6 +1369,7 @@ let worldData = [{
 	"population": 113094,
 	"median age": 33.3,
 	"GDP(PPP)": 1634000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GJ-flag.gif"
 }, {
 	"id": "GU",
@@ -1301,6 +1384,7 @@ let worldData = [{
 	"population": 168485,
 	"median age": 29.4,
 	"GDP(PPP)": 5793000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GQ-flag.gif"
 }, {
 	"id": "GT",
@@ -1315,6 +1399,7 @@ let worldData = [{
 	"population": 17153288,
 	"median age": 23.2,
 	"GDP(PPP)": 138100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GT-flag.gif"
 }, {
 	"id": "GG",
@@ -1329,6 +1414,7 @@ let worldData = [{
 	"population": 67052,
 	"median age": 44.3,
 	"GDP(PPP)": 3465000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GK-flag.gif"
 }, {
 	"id": "GN",
@@ -1343,6 +1429,7 @@ let worldData = [{
 	"population": 12527440,
 	"median age": 19.1,
 	"GDP(PPP)": 27970000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GV-flag.gif"
 }, {
 	"id": "GW",
@@ -1357,6 +1444,7 @@ let worldData = [{
 	"population": 1927104,
 	"median age": 18,
 	"GDP(PPP)": 3171000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PU-flag.gif"
 }, {
 	"id": "GY",
@@ -1371,6 +1459,7 @@ let worldData = [{
 	"population": 750204,
 	"median age": 27.5,
 	"GDP(PPP)": 6301000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GY-flag.gif"
 }, {
 	"id": "HT",
@@ -1385,6 +1474,7 @@ let worldData = [{
 	"population": 11067777,
 	"median age": 24.1,
 	"GDP(PPP)": 19970000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HA-flag.gif"
 }, {
 	"id": "HN",
@@ -1399,6 +1489,7 @@ let worldData = [{
 	"population": 9235340,
 	"median age": 24.4,
 	"GDP(PPP)": 46300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HO-flag.gif"
 }, {
 	"id": "HK",
@@ -1413,6 +1504,7 @@ let worldData = [{
 	"population": 7249907,
 	"median age": 45.6,
 	"GDP(PPP)": 480500000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HK-flag.gif"
 }, {
 	"id": "HU",
@@ -1427,6 +1519,7 @@ let worldData = [{
 	"population": 9771827,
 	"median age": 43.6,
 	"GDP(PPP)": 289600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HU-flag.gif"
 }, {
 	"id": "IS",
@@ -1441,6 +1534,7 @@ let worldData = [{
 	"population": 350734,
 	"median age": 37.1,
 	"GDP(PPP)": 18180000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IC-flag.gif"
 }, {
 	"id": "IN",
@@ -1455,6 +1549,7 @@ let worldData = [{
 	"population": 1326093247,
 	"median age": 28.7,
 	"GDP(PPP)": 9474000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IN-flag.gif"
 }, {
 	"id": "ID",
@@ -1469,6 +1564,7 @@ let worldData = [{
 	"population": 267026366,
 	"median age": 31.1,
 	"GDP(PPP)": 3250000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ID-flag.gif"
 }, {
 	"id": "IR",
@@ -1483,6 +1579,7 @@ let worldData = [{
 	"population": 84923314,
 	"median age": 31.7,
 	"GDP(PPP)": 1640000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IR-flag.gif"
 }, {
 	"id": "IQ",
@@ -1497,6 +1594,7 @@ let worldData = [{
 	"population": 38872655,
 	"median age": 21.2,
 	"GDP(PPP)": 649300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IZ-flag.gif"
 }, {
 	"id": "IE",
@@ -1511,6 +1609,7 @@ let worldData = [{
 	"population": 5176569,
 	"median age": 37.8,
 	"GDP(PPP)": 353300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EI-flag.gif"
 }, {
 	"id": "IM",
@@ -1525,6 +1624,7 @@ let worldData = [{
 	"population": 90499,
 	"median age": 44.6,
 	"GDP(PPP)": 6792000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IM-flag.gif"
 }, {
 	"id": "IL",
@@ -1539,6 +1639,7 @@ let worldData = [{
 	"population": 8675475,
 	"median age": 30.4,
 	"GDP(PPP)": 317100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IS-flag.gif"
 }, {
 	"id": "IT",
@@ -1553,6 +1654,7 @@ let worldData = [{
 	"population": 62402659,
 	"median age": 46.5,
 	"GDP(PPP)": 2317000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IT-flag.gif"
 }, {
 	"id": "JM",
@@ -1567,6 +1669,7 @@ let worldData = [{
 	"population": 2808570,
 	"median age": 29.4,
 	"GDP(PPP)": 26060000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JM-flag.gif"
 }, {
 	"id": "JP",
@@ -1581,6 +1684,7 @@ let worldData = [{
 	"population": 125507472,
 	"median age": 48.6,
 	"GDP(PPP)": 5443000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JA-flag.gif"
 }, {
 	"id": "JE",
@@ -1595,6 +1699,7 @@ let worldData = [{
 	"population": 101073,
 	"median age": 37.5,
 	"GDP(PPP)": 5569000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JE-flag.gif"
 }, {
 	"id": "JO",
@@ -1609,6 +1714,7 @@ let worldData = [{
 	"population": 10820644,
 	"median age": 23.5,
 	"GDP(PPP)": 89000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JO-flag.gif"
 }, {
 	"id": "KZ",
@@ -1623,6 +1729,7 @@ let worldData = [{
 	"population": 19091949,
 	"median age": 31.6,
 	"GDP(PPP)": 478600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KZ-flag.gif"
 }, {
 	"id": "KE",
@@ -1637,6 +1744,7 @@ let worldData = [{
 	"population": 53527936,
 	"median age": 20,
 	"GDP(PPP)": 163700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KE-flag.gif"
 }, {
 	"id": "KI",
@@ -1651,6 +1759,7 @@ let worldData = [{
 	"population": 111796,
 	"median age": 25.7,
 	"GDP(PPP)": 227000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KR-flag.gif"
 }, {
 	"id": "KP",
@@ -1665,6 +1774,7 @@ let worldData = [{
 	"population": 25643466,
 	"median age": 34.6,
 	"GDP(PPP)": 40000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KN-flag.gif"
 }, {
 	"id": "KR",
@@ -1679,6 +1789,7 @@ let worldData = [{
 	"population": 51835110,
 	"median age": 43.2,
 	"GDP(PPP)": 2035000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KS-flag.gif"
 }, {
 	"id": "XK",
@@ -1693,6 +1804,7 @@ let worldData = [{
 	"population": 1932774,
 	"median age": 30.5,
 	"GDP(PPP)": 19600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KV-flag.gif"
 }, {
 	"id": "KW",
@@ -1707,6 +1819,7 @@ let worldData = [{
 	"population": 2993706,
 	"median age": 29.7,
 	"GDP(PPP)": 289700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KU-flag.gif"
 }, {
 	"id": "KG",
@@ -1721,6 +1834,7 @@ let worldData = [{
 	"population": 5964897,
 	"median age": 27.3,
 	"GDP(PPP)": 23150000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KG-flag.gif"
 }, {
 	"id": "LA",
@@ -1735,6 +1849,7 @@ let worldData = [{
 	"population": 7447396,
 	"median age": 24,
 	"GDP(PPP)": 49340000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LA-flag.gif"
 }, {
 	"id": "LV",
@@ -1749,6 +1864,7 @@ let worldData = [{
 	"population": 1881232,
 	"median age": 44.4,
 	"GDP(PPP)": 54020000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LG-flag.gif"
 }, {
 	"id": "LB",
@@ -1763,6 +1879,7 @@ let worldData = [{
 	"population": 5469612,
 	"median age": 33.7,
 	"GDP(PPP)": 88250000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LE-flag.gif"
 }, {
 	"id": "LS",
@@ -1777,6 +1894,7 @@ let worldData = [{
 	"population": 1969334,
 	"median age": 24.7,
 	"GDP(PPP)": 6656000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LT-flag.gif"
 }, {
 	"id": "LR",
@@ -1791,6 +1909,7 @@ let worldData = [{
 	"population": 5073296,
 	"median age": 18,
 	"GDP(PPP)": 6112000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LI-flag.gif"
 }, {
 	"id": "LY",
@@ -1805,6 +1924,7 @@ let worldData = [{
 	"population": 6890535,
 	"median age": 25.8,
 	"GDP(PPP)": 61970000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LY-flag.gif"
 }, {
 	"id": "LI",
@@ -1819,6 +1939,7 @@ let worldData = [{
 	"population": 39137,
 	"median age": 43.7,
 	"GDP(PPP)": 4978000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LS-flag.gif"
 }, {
 	"id": "LT",
@@ -1833,6 +1954,7 @@ let worldData = [{
 	"population": 2731464,
 	"median age": 44.5,
 	"GDP(PPP)": 91470000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LH-flag.gif"
 }, {
 	"id": "LU",
@@ -1847,6 +1969,7 @@ let worldData = [{
 	"population": 628381,
 	"median age": 39.5,
 	"GDP(PPP)": 62110000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LU-flag.gif"
 }, {
 	"id": "MO",
@@ -1861,6 +1984,7 @@ let worldData = [{
 	"population": 614458,
 	"median age": 40.8,
 	"GDP(PPP)": 77330000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MC-flag.gif"
 }, {
 	"id": "MG",
@@ -1875,6 +1999,7 @@ let worldData = [{
 	"population": 26955737,
 	"median age": 20.3,
 	"GDP(PPP)": 39850000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MA-flag.gif"
 }, {
 	"id": "MW",
@@ -1889,6 +2014,7 @@ let worldData = [{
 	"population": 21196629,
 	"median age": 16.8,
 	"GDP(PPP)": 22420000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MI-flag.gif"
 }, {
 	"id": "MY",
@@ -1903,6 +2029,7 @@ let worldData = [{
 	"population": 32652083,
 	"median age": 29.2,
 	"GDP(PPP)": 933300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MY-flag.gif"
 }, {
 	"id": "MV",
@@ -1917,6 +2044,7 @@ let worldData = [{
 	"population": 391904,
 	"median age": 29.5,
 	"GDP(PPP)": 6901000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MV-flag.gif"
 }, {
 	"id": "ML",
@@ -1931,6 +2059,7 @@ let worldData = [{
 	"population": 19553397,
 	"median age": 16,
 	"GDP(PPP)": 41220000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ML-flag.gif"
 }, {
 	"id": "MT",
@@ -1945,6 +2074,7 @@ let worldData = [{
 	"population": 457267,
 	"median age": 42.3,
 	"GDP(PPP)": 19260000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MT-flag.gif"
 }, {
 	"id": "MH",
@@ -1959,6 +2089,7 @@ let worldData = [{
 	"population": 77917,
 	"median age": 23.8,
 	"GDP(PPP)": 196000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RM-flag.gif"
 }, {
 	"id": "MR",
@@ -1973,6 +2104,7 @@ let worldData = [{
 	"population": 4005475,
 	"median age": 21,
 	"GDP(PPP)": 17280000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MR-flag.gif"
 }, {
 	"id": "MU",
@@ -1987,6 +2119,7 @@ let worldData = [{
 	"population": 1379365,
 	"median age": 36.3,
 	"GDP(PPP)": 28270000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MP-flag.gif"
 }, {
 	"id": "MX",
@@ -2001,6 +2134,7 @@ let worldData = [{
 	"population": 128649565,
 	"median age": 29.3,
 	"GDP(PPP)": 2463000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MX-flag.gif"
 }, {
 	"id": "FM",
@@ -2015,6 +2149,7 @@ let worldData = [{
 	"population": 102436,
 	"median age": 26.3,
 	"GDP(PPP)": 348000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FM-flag.gif"
 }, {
 	"id": "MD",
@@ -2029,6 +2164,7 @@ let worldData = [{
 	"population": 3364496,
 	"median age": 37.7,
 	"GDP(PPP)": 23720000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MD-flag.gif"
 }, {
 	"id": "MC",
@@ -2043,6 +2179,7 @@ let worldData = [{
 	"population": 39000,
 	"median age": 55.4,
 	"GDP(PPP)": 7672000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MN-flag.gif"
 }, {
 	"id": "MN",
@@ -2057,6 +2194,7 @@ let worldData = [{
 	"population": 3168026,
 	"median age": 29.8,
 	"GDP(PPP)": 43540000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MG-flag.gif"
 }, {
 	"id": "ME",
@@ -2071,6 +2209,7 @@ let worldData = [{
 	"population": 609859,
 	"median age": 39.6,
 	"GDP(PPP)": 11080000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MJ-flag.gif"
 }, {
 	"id": "MS",
@@ -2085,6 +2224,7 @@ let worldData = [{
 	"population": 5373,
 	"median age": 34.8,
 	"GDP(PPP)": 167400000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MH-flag.gif"
 }, {
 	"id": "MA",
@@ -2099,6 +2239,7 @@ let worldData = [{
 	"population": 35561654,
 	"median age": 29.1,
 	"GDP(PPP)": 298600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MO-flag.gif"
 }, {
 	"id": "MZ",
@@ -2113,6 +2254,7 @@ let worldData = [{
 	"population": 30098197,
 	"median age": 17,
 	"GDP(PPP)": 37090000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MZ-flag.gif"
 }, {
 	"id": "NA",
@@ -2127,6 +2269,7 @@ let worldData = [{
 	"population": 2630073,
 	"median age": 21.8,
 	"GDP(PPP)": 26600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WA-flag.gif"
 }, {
 	"id": "NR",
@@ -2141,6 +2284,7 @@ let worldData = [{
 	"population": 11000,
 	"median age": 27,
 	"GDP(PPP)": 160000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NR-flag.gif"
 }, {
 	"id": "NP",
@@ -2155,6 +2299,7 @@ let worldData = [{
 	"population": 30327877,
 	"median age": 25.3,
 	"GDP(PPP)": 79190000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NP-flag.gif"
 }, {
 	"id": "NL",
@@ -2169,6 +2314,7 @@ let worldData = [{
 	"population": 17280397,
 	"median age": 42.8,
 	"GDP(PPP)": 924400000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NL-flag.gif"
 }, {
 	"id": "NC",
@@ -2183,6 +2329,7 @@ let worldData = [{
 	"population": 290009,
 	"median age": 32.9,
 	"GDP(PPP)": 11110000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NC-flag.gif"
 }, {
 	"id": "NZ",
@@ -2197,6 +2344,7 @@ let worldData = [{
 	"population": 4925477,
 	"median age": 37.2,
 	"GDP(PPP)": 189000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NZ-flag.gif"
 }, {
 	"id": "NI",
@@ -2211,6 +2359,7 @@ let worldData = [{
 	"population": 6203441,
 	"median age": 27.3,
 	"GDP(PPP)": 36400000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NU-flag.gif"
 }, {
 	"id": "NE",
@@ -2225,6 +2374,7 @@ let worldData = [{
 	"population": 22772361,
 	"median age": 14.8,
 	"GDP(PPP)": 21860000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NG-flag.gif"
 }, {
 	"id": "NG",
@@ -2239,6 +2389,7 @@ let worldData = [{
 	"population": 214028302,
 	"median age": 18.6,
 	"GDP(PPP)": 1121000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NI-flag.gif"
 }, {
 	"id": "MK",
@@ -2253,6 +2404,7 @@ let worldData = [{
 	"population": 2125971,
 	"median age": 39,
 	"GDP(PPP)": 31030000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MK-flag.gif"
 }, {
 	"id": "MP",
@@ -2267,6 +2419,7 @@ let worldData = [{
 	"population": 51433,
 	"median age": 32.8,
 	"GDP(PPP)": 1242000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CQ-flag.gif"
 }, {
 	"id": "NO",
@@ -2281,6 +2434,7 @@ let worldData = [{
 	"population": 5467439,
 	"median age": 39.5,
 	"GDP(PPP)": 381200000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NO-flag.gif"
 }, {
 	"id": "OM",
@@ -2295,6 +2449,7 @@ let worldData = [{
 	"population": 4664844,
 	"median age": 26.2,
 	"GDP(PPP)": 190100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MU-flag.gif"
 }, {
 	"id": "PK",
@@ -2309,6 +2464,7 @@ let worldData = [{
 	"population": 233500636,
 	"median age": 22,
 	"GDP(PPP)": 1061000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PK-flag.gif"
 }, {
 	"id": "PW",
@@ -2323,6 +2479,7 @@ let worldData = [{
 	"population": 21685,
 	"median age": 33.9,
 	"GDP(PPP)": 264000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PS-flag.gif"
 }, {
 	"id": "PA",
@@ -2337,6 +2494,7 @@ let worldData = [{
 	"population": 3894082,
 	"median age": 30.1,
 	"GDP(PPP)": 104100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PM-flag.gif"
 }, {
 	"id": "PG",
@@ -2351,6 +2509,7 @@ let worldData = [{
 	"population": 7259456,
 	"median age": 24,
 	"GDP(PPP)": 30190000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PP-flag.gif"
 }, {
 	"id": "PY",
@@ -2365,6 +2524,7 @@ let worldData = [{
 	"population": 7191685,
 	"median age": 29.7,
 	"GDP(PPP)": 88910000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PA-flag.gif"
 }, {
 	"id": "PE",
@@ -2379,6 +2539,7 @@ let worldData = [{
 	"population": 31914989,
 	"median age": 29.1,
 	"GDP(PPP)": 430300000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PE-flag.gif"
 }, {
 	"id": "PH",
@@ -2393,6 +2554,7 @@ let worldData = [{
 	"population": 109180815,
 	"median age": 24.1,
 	"GDP(PPP)": 877200000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RP-flag.gif"
 }, {
 	"id": "PL",
@@ -2407,6 +2569,7 @@ let worldData = [{
 	"population": 38282325,
 	"median age": 41.9,
 	"GDP(PPP)": 1126000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PL-flag.gif"
 }, {
 	"id": "PT",
@@ -2421,6 +2584,7 @@ let worldData = [{
 	"population": 10302674,
 	"median age": 44.6,
 	"GDP(PPP)": 314100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PO-flag.gif"
 }, {
 	"id": "PR",
@@ -2435,6 +2599,7 @@ let worldData = [{
 	"population": 3189068,
 	"median age": 43.6,
 	"GDP(PPP)": 130000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RQ-flag.gif"
 }, {
 	"id": "QA",
@@ -2449,6 +2614,7 @@ let worldData = [{
 	"population": 2444174,
 	"median age": 33.7,
 	"GDP(PPP)": 339500000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/QA-flag.gif"
 }, {
 	"id": "RO",
@@ -2463,6 +2629,7 @@ let worldData = [{
 	"population": 21302893,
 	"median age": 42.5,
 	"GDP(PPP)": 483400000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RO-flag.gif"
 }, {
 	"id": "RU",
@@ -2477,6 +2644,7 @@ let worldData = [{
 	"population": 141722205,
 	"median age": 40.3,
 	"GDP(PPP)": 4016000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RS-flag.gif"
 }, {
 	"id": "RW",
@@ -2491,6 +2659,7 @@ let worldData = [{
 	"population": 12712431,
 	"median age": 19.7,
 	"GDP(PPP)": 24680000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RW-flag.gif"
 }, {
 	"id": "SH",
@@ -2505,6 +2674,7 @@ let worldData = [{
 	"population": 7862,
 	"median age": 43.2,
 	"GDP(PPP)": 31100000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SH-flag.gif"
 }, {
 	"id": "KN",
@@ -2519,6 +2689,7 @@ let worldData = [{
 	"population": 53821,
 	"median age": 36.5,
 	"GDP(PPP)": 1550000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SC-flag.gif"
 }, {
 	"id": "LC",
@@ -2533,6 +2704,7 @@ let worldData = [{
 	"population": 166487,
 	"median age": 36.9,
 	"GDP(PPP)": 2542000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ST-flag.gif"
 }, {
 	"id": "MF",
@@ -2547,6 +2719,7 @@ let worldData = [{
 	"population": 32556,
 	"median age": 33.3,
 	"GDP(PPP)": 561500000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RN-flag.gif"
 }, {
 	"id": "PM",
@@ -2561,6 +2734,7 @@ let worldData = [{
 	"population": 5347,
 	"median age": 48.5,
 	"GDP(PPP)": 261300000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SB-flag.gif"
 }, {
 	"id": "VC",
@@ -2575,6 +2749,7 @@ let worldData = [{
 	"population": 101390,
 	"median age": 35.3,
 	"GDP(PPP)": 1265000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VC-flag.gif"
 }, {
 	"id": "WS",
@@ -2589,6 +2764,7 @@ let worldData = [{
 	"population": 203774,
 	"median age": 25.6,
 	"GDP(PPP)": 1137000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WS-flag.gif"
 }, {
 	"id": "SM",
@@ -2603,6 +2779,7 @@ let worldData = [{
 	"population": 34232,
 	"median age": 45.2,
 	"GDP(PPP)": 2064000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SM-flag.gif"
 }, {
 	"id": "ST",
@@ -2617,6 +2794,7 @@ let worldData = [{
 	"population": 211122,
 	"median age": 19.3,
 	"GDP(PPP)": 686000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TP-flag.gif"
 }, {
 	"id": "SA",
@@ -2631,6 +2809,7 @@ let worldData = [{
 	"population": 34173498,
 	"median age": 30.8,
 	"GDP(PPP)": 1775000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SA-flag.gif"
 }, {
 	"id": "SN",
@@ -2645,6 +2824,7 @@ let worldData = [{
 	"population": 15736368,
 	"median age": 19.4,
 	"GDP(PPP)": 54800000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SG-flag.gif"
 }, {
 	"id": "RS",
@@ -2659,6 +2839,7 @@ let worldData = [{
 	"population": 7012165,
 	"median age": 43.4,
 	"GDP(PPP)": 105700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RI-flag.gif"
 }, {
 	"id": "SC",
@@ -2673,6 +2854,7 @@ let worldData = [{
 	"population": 95981,
 	"median age": 36.8,
 	"GDP(PPP)": 2750000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SE-flag.gif"
 }, {
 	"id": "SL",
@@ -2687,6 +2869,7 @@ let worldData = [{
 	"population": 6624933,
 	"median age": 19.1,
 	"GDP(PPP)": 11550000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SL-flag.gif"
 }, {
 	"id": "SG",
@@ -2701,6 +2884,7 @@ let worldData = [{
 	"population": 6209660,
 	"median age": 35.6,
 	"GDP(PPP)": 528100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SN-flag.gif"
 }, {
 	"id": "SX",
@@ -2715,6 +2899,7 @@ let worldData = [{
 	"population": 43847,
 	"median age": 41.1,
 	"GDP(PPP)": 365800000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NN-flag.gif"
 }, {
 	"id": "SK",
@@ -2729,6 +2914,7 @@ let worldData = [{
 	"population": 5440602,
 	"median age": 41.8,
 	"GDP(PPP)": 179700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LO-flag.gif"
 }, {
 	"id": "SI",
@@ -2743,6 +2929,7 @@ let worldData = [{
 	"population": 2102678,
 	"median age": 44.9,
 	"GDP(PPP)": 71230000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SI-flag.gif"
 }, {
 	"id": "SB",
@@ -2757,6 +2944,7 @@ let worldData = [{
 	"population": 685097,
 	"median age": 23.5,
 	"GDP(PPP)": 1330000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BP-flag.gif"
 }, {
 	"id": "SO",
@@ -2771,6 +2959,7 @@ let worldData = [{
 	"population": 11757124,
 	"median age": 18.5,
 	"GDP(PPP)": 20440000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SO-flag.gif"
 }, {
 	"id": "ZA",
@@ -2785,6 +2974,7 @@ let worldData = [{
 	"population": 56463617,
 	"median age": 28,
 	"GDP(PPP)": 767200000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SF-flag.gif"
 }, {
 	"id": "SS",
@@ -2799,6 +2989,7 @@ let worldData = [{
 	"population": 10561244,
 	"median age": 18.6,
 	"GDP(PPP)": 20010000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/OD-flag.gif"
 }, {
 	"id": "ES",
@@ -2813,6 +3004,7 @@ let worldData = [{
 	"population": 50015792,
 	"median age": 43.9,
 	"GDP(PPP)": 1778000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SP-flag.gif"
 }, {
 	"id": "LK",
@@ -2827,6 +3019,7 @@ let worldData = [{
 	"population": 22889201,
 	"median age": 33.7,
 	"GDP(PPP)": 275800000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CE-flag.gif"
 }, {
 	"id": "SD",
@@ -2841,6 +3034,7 @@ let worldData = [{
 	"population": 45561556,
 	"median age": 18.3,
 	"GDP(PPP)": 177400000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SU-flag.gif"
 }, {
 	"id": "SR",
@@ -2855,6 +3049,7 @@ let worldData = [{
 	"population": 609569,
 	"median age": 31,
 	"GDP(PPP)": 8688000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NS-flag.gif"
 }, {
 	"id": "SE",
@@ -2869,6 +3064,7 @@ let worldData = [{
 	"population": 10202491,
 	"median age": 41.1,
 	"GDP(PPP)": 518000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SW-flag.gif"
 }, {
 	"id": "CH",
@@ -2883,6 +3079,7 @@ let worldData = [{
 	"population": 8403994,
 	"median age": 42.7,
 	"GDP(PPP)": 523100000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SZ-flag.gif"
 }, {
 	"id": "SY",
@@ -2897,6 +3094,7 @@ let worldData = [{
 	"population": 19398448,
 	"median age": 23.5,
 	"GDP(PPP)": 50280000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SY-flag.gif"
 }, {
 	"id": "TW",
@@ -2911,6 +3109,7 @@ let worldData = [{
 	"population": 23603049,
 	"median age": 42.3,
 	"GDP(PPP)": 1189000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TW-flag.gif"
 }, {
 	"id": "TJ",
@@ -2925,6 +3124,7 @@ let worldData = [{
 	"population": 8873669,
 	"median age": 25.3,
 	"GDP(PPP)": 28430000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TI-flag.gif"
 }, {
 	"id": "TZ",
@@ -2939,6 +3139,7 @@ let worldData = [{
 	"population": 58552845,
 	"median age": 18.2,
 	"GDP(PPP)": 162500000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TZ-flag.gif"
 }, {
 	"id": "TH",
@@ -2953,6 +3154,7 @@ let worldData = [{
 	"population": 68977400,
 	"median age": 39,
 	"GDP(PPP)": 1236000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TH-flag.gif"
 }, {
 	"id": "TL",
@@ -2967,6 +3169,7 @@ let worldData = [{
 	"population": 1383723,
 	"median age": 19.6,
 	"GDP(PPP)": 7426000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TT-flag.gif"
 }, {
 	"id": "TG",
@@ -2981,6 +3184,7 @@ let worldData = [{
 	"population": 8608444,
 	"median age": 20,
 	"GDP(PPP)": 12970000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TO-flag.gif"
 }, {
 	"id": "TO",
@@ -2995,6 +3199,7 @@ let worldData = [{
 	"population": 106095,
 	"median age": 24.1,
 	"GDP(PPP)": 591000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TN-flag.gif"
 }, {
 	"id": "TT",
@@ -3009,6 +3214,7 @@ let worldData = [{
 	"population": 1208789,
 	"median age": 37.8,
 	"GDP(PPP)": 42850000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TD-flag.gif"
 }, {
 	"id": "TN",
@@ -3023,6 +3229,7 @@ let worldData = [{
 	"population": 11721177,
 	"median age": 32.7,
 	"GDP(PPP)": 137700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TS-flag.gif"
 }, {
 	"id": "TR",
@@ -3037,6 +3244,7 @@ let worldData = [{
 	"population": 82017514,
 	"median age": 32.2,
 	"GDP(PPP)": 2186000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TU-flag.gif"
 }, {
 	"id": "TM",
@@ -3051,6 +3259,7 @@ let worldData = [{
 	"population": 5528627,
 	"median age": 29.2,
 	"GDP(PPP)": 103700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TX-flag.gif"
 }, {
 	"id": "TC",
@@ -3065,6 +3274,7 @@ let worldData = [{
 	"population": 55926,
 	"median age": 34.6,
 	"GDP(PPP)": 632000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TK-flag.gif"
 }, {
 	"id": "TV",
@@ -3079,6 +3289,7 @@ let worldData = [{
 	"population": 11342,
 	"median age": 26.6,
 	"GDP(PPP)": 42000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TV-flag.gif"
 }, {
 	"id": "UG",
@@ -3093,12 +3304,13 @@ let worldData = [{
 	"population": 43252966,
 	"median age": 15.7,
 	"GDP(PPP)": 89190000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UG-flag.gif"
 }, {
 	"id": "UA",
 	"name": "Ukraine",
 	"background": 'Ukraine was the center of the first eastern Slavic state, Kyivan Rus, which during the 10th and 11th centuries was the largest and most powerful state in Europe. Weakened by internecine quarrels and Mongol invasions, Kyivan Rus was incorporated into the Grand Duchy of Lithuania and eventually into the Polish-Lithuanian Commonwealth. The cultural and religious legacy of Kyivan Rus laid the foundation for Ukrainian nationalism through subsequent centuries. A new Ukrainian state, the Cossack Hetmanate, was established during the mid-17th century after an uprising against the Poles. Despite continuous Muscovite pressure, the Hetmanate managed to remain autonomous for well over 100 years. During the latter part of the 18th century, most Ukrainian ethnographic territory was absorbed by the Russian Empire. Following the collapse of czarist Russia in 1917, Ukraine achieved a short-lived period of independence (1917-20), but was reconquered and endured a brutal Soviet rule that engineered two forced famines (1921-22 and 1932-33) in which over 8 million died. In World War II, German and Soviet armies were responsible for 7 to 8 million more deaths. Although Ukraine achieved independence in 1991 with the dissolution of the USSR, democracy and prosperity remained elusive as the legacy of state control and endemic corruption stalled efforts at economic reform, privatization, and civil liberties.A peaceful mass protest referred to as the \"Orange Revolution\" in the closing months of 2004 forced the authorities to overturn a rigged presidential election and to allow a new internationally monitored vote that swept into power a reformist slate under Viktor YUSHCHENKO. Subsequent internal squabbles in the YUSHCHENKO camp allowed his rival Viktor YANUKOVYCH to stage a comeback in parliamentary (Rada) elections, become prime minister in August 2006, and be elected president in February 2010. In October 2012, Ukraine held Rada elections, widely criticized by Western observers as flawed due to use of government resources to favor ruling party candidates, interference with media access, and harassment of opposition candidates. President YANUKOVYCH\'s backtracking on a trade and cooperation agreement with the EU in November 2013 - in favor of closer economic ties with Russia - and subsequent use of force against students, civil society activists, and other civilians in favor of the agreement led to a three-month protest occupation of Kyiv\'s central square. The government\'s use of violence to break up the protest camp in February 2014 led to all out pitched battles, scores of deaths, international condemnation, a failed political deal, and the president\'s abrupt departure for Russia. New elections in the spring allowed pro-West president Petro POROSHENKO to assume office in June 2014; he was succeeded by Volodymyr ZELENSKY in May 2019.Shortly after YANUKOVYCH\'s departure in late February 2014, Russian President PUTIN ordered the invasion of Ukraine\'s Crimean Peninsula falsely claiming the action was to protect ethnic Russians living there. Two weeks later, a \"referendum\" was held regarding the integration of Crimea into the Russian Federation. The \"referendum\" was condemned as illegitimate by the Ukrainian Government, the EU, the US, and the UN General Assembly (UNGA). In response to Russia\'s illegal annexation of Crimea, 100 members of the UN passed UNGA resolution 68/262, rejecting the \"referendum\" as baseless and invalid and confirming the sovereignty, political independence, unity, and territorial integrity of Ukraine. In mid-2014, Russia began supplying proxies in two of Ukraine\'s eastern provinces with manpower, funding, and materiel driving an armed conflict with the Ukrainian Government that continues to this day. Representatives from Ukraine, Russia, and the unrecognized Russian proxy republics signed the Minsk Protocol and Memorandum in September 2014 to end the conflict. However, this agreement failed to stop the fighting or find a political solution. In a renewed attempt to alleviate ongoing clashes, leaders of Ukraine, Russia, France, and Germany negotiated a follow-on Package of Measures in February 2015 to implement the Minsk agreements. Representatives from Ukraine, Russia, the unrecognized Russian proxy republics, and the Organization for Security and Cooperation in Europe also meet regularly to facilitate implementation of the peace deal. More than 13,000 civilians have been killed or wounded as a result of the Russian intervention in eastern Ukraine.',
-	"region": 'AsiaEurope',
+	"region": 'Europe',
 	"capital": 'Kyiv',
 	"birth rate": 9.6,
 	"death rate": 14,
@@ -3107,6 +3319,7 @@ let worldData = [{
 	"population": 43922939,
 	"median age": 41.2,
 	"GDP(PPP)": 369600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UP-flag.gif"
 }, {
 	"id": "AE",
@@ -3121,6 +3334,7 @@ let worldData = [{
 	"population": 9992083,
 	"median age": 38.4,
 	"GDP(PPP)": 696000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AE-flag.gif"
 }, {
 	"id": "GB",
@@ -3135,6 +3349,7 @@ let worldData = [{
 	"population": 65761117,
 	"median age": 40.6,
 	"GDP(PPP)": 2925000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UK-flag.gif"
 }, {
 	"id": "US",
@@ -3149,6 +3364,7 @@ let worldData = [{
 	"population": 332639102,
 	"median age": 38.5,
 	"GDP(PPP)": 19490000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/US-flag.gif"
 }, {
 	"id": "UY",
@@ -3163,6 +3379,7 @@ let worldData = [{
 	"population": 3387605,
 	"median age": 35.5,
 	"GDP(PPP)": 78160000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UY-flag.gif"
 }, {
 	"id": "UZ",
@@ -3177,6 +3394,7 @@ let worldData = [{
 	"population": 30565411,
 	"median age": 30.1,
 	"GDP(PPP)": 223000000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UZ-flag.gif"
 }, {
 	"id": "VU",
@@ -3191,6 +3409,7 @@ let worldData = [{
 	"population": 298333,
 	"median age": 23,
 	"GDP(PPP)": 772000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NH-flag.gif"
 }, {
 	"id": "VE",
@@ -3205,6 +3424,7 @@ let worldData = [{
 	"population": 28644603,
 	"median age": 30,
 	"GDP(PPP)": 381600000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VE-flag.gif"
 }, {
 	"id": "VN",
@@ -3219,6 +3439,7 @@ let worldData = [{
 	"population": 98721275,
 	"median age": 31.9,
 	"GDP(PPP)": 648700000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VM-flag.gif"
 }, {
 	"id": "VI",
@@ -3233,6 +3454,7 @@ let worldData = [{
 	"population": 106235,
 	"median age": 41.8,
 	"GDP(PPP)": 3872000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VQ-flag.gif"
 }, {
 	"id": "WF",
@@ -3247,10 +3469,11 @@ let worldData = [{
 	"population": 15854,
 	"median age": 34,
 	"GDP(PPP)": 60000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WF-flag.gif"
 }, {
 	"id": "PS",
-	"name": "West Bank",
+	"name": "Palestine",
 	"background": 'Inhabited since at least the 15th century B.C., the West Bank has been dominated by many different peoples throughout its history; it was incorporated into the Ottoman Empire in the early 16th century. The West Bank fell to British forces during World War I, becoming part of the British Mandate of Palestine. Following the 1948 Arab-Israeli War, the West Bank was captured by Transjordan (later renamed Jordan), which annexed the West Bank in 1950; it was captured by Israel in the Six-Day War in 1967. Under a series of agreements known as the Oslo accords signed between 1993 and 1999, Israel transferred to the newly created Palestinian Authority (PA) security and civilian responsibility for many Palestinian-populated areas of the West Bank as well as the Gaza Strip. In 2000, a violent intifada or uprising began, and in 2001 negotiations to determine the permanent status of the West Bank and Gaza Strip stalled. Subsequent attempts to re-start direct negotiations have not resulted in progress toward determining final status of the area.Roughly 60% of the West Bank, remains under Israeli civil and military control. In early 2006, the Islamic Resistance Movement (HAMAS) won a majority in the Palestinian Legislative Council (PLC) election. Attempts to form a unity government between Fatah, the dominant Palestinian political faction in the West Bank, and HAMAS failed, leading to violent clashed between their respective supporters and HAMAS\'s violent siezure of all military and governmental institutions in the Gaza Strip in June 2007. Since 2007, the PA has administered parts of the West Bank under its control, mainly the major Palestinian population centers and areas immediately surrounding them. Fatah and HAMAS have made several attempts at reconciliation, but the factions have been unable to implement agreements including the latest agreement signed in October 2017. In December 2018, the Palestinian Constitutional Court dissolved the PLC. In 2019, PA President ABBAS renewed his calls for PLC elections.',
 	"region": 'Middle East',
 	"capital": 'East Jerusalem',
@@ -3261,6 +3484,7 @@ let worldData = [{
 	"population": 2900034,
 	"median age": 21.9,
 	"GDP(PPP)": 21220000000,
+	"score": 0,
 	"flag": "https://flaglane.com/download/palestinian-flag/palestinian-flag-medium.gif"
 }, {
 	"id": "EH",
@@ -3275,6 +3499,7 @@ let worldData = [{
 	"population": 652271,
 	"median age": 21.8,
 	"GDP(PPP)": 906500000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WI-flag.gif"
 }, {
 	"id": "YE",
@@ -3289,6 +3514,7 @@ let worldData = [{
 	"population": 29884405,
 	"median age": 19.8,
 	"GDP(PPP)": 73630000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/YM-flag.gif"
 }, {
 	"id": "ZM",
@@ -3303,6 +3529,7 @@ let worldData = [{
 	"population": 17426623,
 	"median age": 16.9,
 	"GDP(PPP)": 68930000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ZA-flag.gif"
 }, {
 	"id": "ZW",
@@ -3317,6 +3544,7 @@ let worldData = [{
 	"population": 14546314,
 	"median age": 20.5,
 	"GDP(PPP)": 34270000000,
+	"score": 0,
 	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ZI-flag.gif"
 }]
 
@@ -3367,7 +3595,7 @@ polygonSeries.events.once("inited", function(){
 //imageSeries.data = [{"latitude": 48.8, "longitude": 2.3, "title": "Paris", "flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"}]
 
 polygonTemplate.events.on("hit", function(ev) {
-  if(testChoices.disabled) {
+  if(qDisplay.disabled) {
     chart.closeAllPopups();
     var data = ev.target.dataItem.dataContext;
     //var info = document.getElementById("info");
@@ -3388,6 +3616,9 @@ function menuSelections(num) {
   settings.disabled = true
   testChoices.disabled = true
   triviaGroup.disabled = true
+  geoGroup.disabled = true
+  qDisplay.disabled = true
+  scoreDisplay.disabled = true
   switch(num) {
     case 0:
       heatLegend.disabled = true
@@ -3403,9 +3634,28 @@ function menuSelections(num) {
       break;
     case 3:
       triviaGroup.disabled = false;
+      testButton.disabled = false;
       heatLegend.disabled = true;
       colorGroup.disabled = true
+      if(flagMode) {
+        imageSeries.hidden = true
+        imageSeries.data = null
+        flagMode = false
+      }
       break;
+    case 4:
+      heatLegend.disabled = true;
+      colorGroup.disabled = true;
+      geoGroup.disabled = false;
+      if(flagMode) {
+        imageSeries.hidden = true
+        imageSeries.data = null
+        flagMode = false
+      }
+      break;
+    case 5:
+      heatLegend.disabled = false;
+      colorGroup.disabled = true;
   }
 }
 
@@ -3436,13 +3686,25 @@ let heatmapSelect = menuGroup.createChild(am4core.TextLink);
 heatmapSelect.margin(10,10,10,10);
 heatmapSelect.text = "Heat Maps"
 heatmapSelect.events.on("hit", function(){
+
+  if(dataGroups.disabled) {
+    title.text = "Population"
+    tipMode = 0;
+
+    polygonSeries.heatRules.push({
+      property: "fill",
+      target: polygonSeries.mapPolygons.template,
+      min: am4core.color("#ffffff"),
+      max: am4core.color("#AAAA00")
+    });
+
+    polygonSeries.dataItems.each(function(dataItem) {
+        if(dataItem.dataContext)
+          dataItem.setValue("value", (dataItem.dataContext as any).population)
+    });
+  }
+
   menuSelections(1)
-  polygonSeries.heatRules.push({
-    property: "fill",
-    target: polygonSeries.mapPolygons.template,
-    min: am4core.color("#ffffff"),
-    max: am4core.color("#AAAA00")
-  });
 
   polygonSeries.invalidateData()
 });
@@ -3461,29 +3723,420 @@ triviaSelect.events.on("hit", function(){
   menuSelections(3)
 });
 
+var toggleNA = true;
+var toggleSA = true;
+var toggleEU = true;
+var toggleAS = true;
+var toggleAF = true;
+var toggleME = true;
+var toggleCA = false;
+var toggleOC = false;
+
 let geographySelect = menuGroup.createChild(am4core.TextLink);
 geographySelect.margin(10,10,10,10);
 geographySelect.text = "Geography Quiz"
 
-menuGroup.disabled = false;
+geographySelect.events.on("hit", function(){
+  menuSelections(4)
+  title.text = ""
+  tipMode = 3
+  toggleRegion(toggleNA, "North America")
+  toggleRegion(toggleSA, "South America")
+  toggleRegion(toggleCA, "Central America & The Caribbean")
+  toggleRegion(toggleEU, "Europe")
+  toggleRegion(toggleAS, "Asia")
+  toggleRegion(toggleME, "Middle East")
+  toggleRegion(toggleOC, "Oceania")
+  toggleRegion(toggleAF, "Africa")
+});
+
+function toggleRegion(bool, region) {
+  if(bool) {
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+      if(mapPolygon.dataItem.dataContext && (mapPolygon.dataItem.dataContext as any)["region"] == region)
+        mapPolygon.setState("active");
+    });
+  }
+  else {
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+      if(mapPolygon.dataItem.dataContext && (mapPolygon.dataItem.dataContext as any)["region"] == region) {
+        mapPolygon.isActive = false;
+        mapPolygon.setState("nullified");
+      }
+    });
+  }
+}
+
+let geoGroup = chart.createChild(am4core.Container);
+geoGroup.isMeasured = false;
+geoGroup.layout = "vertical";
+geoGroup.x = am4core.percent(2);
+geoGroup.y = am4core.percent(12);
+
+let regionNA = geoGroup.createChild(am4core.TextLink);
+regionNA.margin(10,10,10,10);
+regionNA.text = "North America: On"
+regionNA.events.on("hit", function(){
+  toggleNA = !toggleNA
+  regionNA.text = "North America: "
+  if(toggleNA)
+    regionNA.text += "On"
+  else
+    regionNA.text += "Off"
+
+  toggleRegion(toggleNA, "North America")
+});
+
+let regionSA = geoGroup.createChild(am4core.TextLink);
+regionSA.margin(10,10,10,10);
+regionSA.text = "South America: On"
+regionSA.events.on("hit", function(){
+  toggleSA = !toggleSA
+  regionSA.text = "South America: "
+  if(toggleSA)
+    regionSA.text += "On"
+  else
+    regionSA.text += "Off"
+
+  toggleRegion(toggleSA, "South America")
+});
+
+let regionCA = geoGroup.createChild(am4core.TextLink);
+regionCA.margin(10,10,10,10);
+regionCA.text = "Central America & The Caribbean: Off"
+regionCA.events.on("hit", function(){
+  toggleCA = !toggleCA
+  regionCA.text = "Central America & The Caribbean: "
+  if(toggleCA)
+    regionCA.text += "On"
+  else
+    regionCA.text += "Off"
+
+  toggleRegion(toggleCA, "Central America & The Caribbean")
+});
+
+let regionEU = geoGroup.createChild(am4core.TextLink);
+regionEU.margin(10,10,10,10);
+regionEU.text = "Europe: On"
+regionEU.events.on("hit", function(){
+  toggleEU = !toggleEU
+  regionEU.text = "Europe: "
+  if(toggleEU)
+    regionEU.text += "On"
+  else
+    regionEU.text += "Off"
+
+  toggleRegion(toggleEU, "Europe")
+});
+
+let regionAS = geoGroup.createChild(am4core.TextLink);
+regionAS.margin(10,10,10,10);
+regionAS.text = "Asia: On"
+regionAS.events.on("hit", function(){
+  toggleAS = !toggleAS
+  regionAS.text = "Asia: "
+  if(toggleAS)
+    regionAS.text += "On"
+  else
+    regionAS.text += "Off"
+
+  toggleRegion(toggleAS, "Asia")
+});
+
+let regionAF = geoGroup.createChild(am4core.TextLink);
+regionAF.margin(10,10,10,10);
+regionAF.text = "Africa: On"
+regionAF.events.on("hit", function(){
+  toggleAF = !toggleAF
+  regionAF.text = "Africa: "
+  if(toggleAF)
+    regionAF.text += "On"
+  else
+    regionAF.text += "Off"
+
+  toggleRegion(toggleAF, "Africa")
+});
+
+let regionME = geoGroup.createChild(am4core.TextLink);
+regionME.margin(10,10,10,10);
+regionME.text = "Middle East: On"
+regionME.events.on("hit", function(){
+  toggleME = !toggleME
+  regionME.text = "Middle East: "
+  if(toggleME)
+    regionME.text += "On"
+  else
+    regionME.text += "Off"
+
+  toggleRegion(toggleME, "Middle East")
+});
+
+let regionOC = geoGroup.createChild(am4core.TextLink);
+regionOC.margin(10,10,10,10);
+regionOC.text = "Oceania: Off"
+regionOC.events.on("hit", function(){
+  toggleOC = !toggleOC
+  regionOC.text = "Oceania: "
+  if(toggleOC)
+    regionOC.text += "On"
+  else
+    regionOC.text += "Off"
+
+  toggleRegion(toggleOC, "Oceania")
+});
+
+var tries = 3
+
+function enabledRegions() {
+  let i = 0
+  let enabled = []
+  polygonSeries.mapPolygons.each(function(mapPolygon) {
+    if(mapPolygon.isActive)
+      enabled.push(i)
+    i += 1
+  });
+
+  return enabled
+}
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+
+  return array
+}
+
+var geoCountries = []
+var geoIterations = 0
+var gqOn = false
+var gqScore = 0
+var gqQuestions = 0
+
+let geoStart = geoGroup.createChild(am4core.TextLink);
+geoStart.text = "Start";
+geoStart.margin(10,10,10,10);
+geoStart.events.on("hit", function() {
+  gqOn = true
+  gqScore = 0
+  geoIterations = 0
+  tries = 3
+  title.text = "Tries: " + tries
+  geoGroup.disabled = true
+  tipMode = 5;
+  heatLegend.disabled = true
+  qDisplay.disabled = false
+  scoreDisplay.disabled = false
+  menuGroup.disabled = true
+  exitQuiz.disabled = false
+
+  geoCountries = shuffle(enabledRegions())
+
+  gqQuestions = geoCountries.length
+
+  qDisplay.text = "Select: " + worldData[geoCountries[geoIterations]].name
+
+  scoreDisplay.text = gqScore + "/" + gqQuestions + "\n" + Math.floor(gqScore/gqQuestions*100) + "%"
+});
+
+geoGroup.disabled = true
+
+var totalScore = 0
+
+let statSelect = menuGroup.createChild(am4core.TextLink);
+statSelect.margin(10,10,10,10);
+statSelect.text = "Quiz Statistics"
+
+statSelect.events.on("hit", function(){
+  totalScore = 0
+  menuSelections(5)
+  title.text = "Statistics"
+  polygonSeries.heatRules.push({
+    property: "fill",
+    target: polygonSeries.mapPolygons.template,
+    min: am4core.color("#e01616"),
+    max: am4core.color("#60e645")
+  });
+  polygonSeries.dataFields.value = "score";
+  tipMode = 1
+  polygonSeries.invalidateData()
+
+  polygonSeries.dataItems.each(function(dataItem) {
+      if(dataItem.dataContext && (dataItem.dataContext as any)["score"] != undefined)
+        totalScore += dataItem.dataContext["score"]
+  });
+  totalScore = Math.floor(totalScore*10)/10
+  scoreDisplay.disabled = false
+  scoreDisplay.text = "Total Score: "
+  if(totalScore > 0)
+    scoreDisplay.text += "+"
+  scoreDisplay.text += totalScore
+});
+
+let exitQuiz = chart.createChild(am4core.TextLink);
+exitQuiz.isMeasured = false;
+exitQuiz.layout = "vertical";
+exitQuiz.x = am4core.percent(95);
+exitQuiz.y = am4core.percent(65);
+exitQuiz.horizontalCenter = "middle";
+exitQuiz.margin(10,10,10,10);
+exitQuiz.text = "Exit Quiz"
+
+exitQuiz.events.on("hit", function(){
+  gqOn = false
+  flagImage.disabled = true
+  menuGroup.disabled = false
+  menuSelections(0)
+  polygonSeries.heatRules.push({
+    property: "fill",
+    target: polygonSeries.mapPolygons.template,
+    min: am4core.color("#43a11f"),
+    max: am4core.color("#43a11f")
+  });
+  title.text = "Interactive Map"
+
+  tipMode = 3;
+  polygonSeries.invalidateData();
+
+  exitQuiz.disabled = true
+});
+
+exitQuiz.disabled = true
 
 let triviaGroup = chart.createChild(am4core.Container);
 triviaGroup.isMeasured = false;
 triviaGroup.layout = "vertical";
 triviaGroup.x = am4core.percent(5);
-triviaGroup.y = am4core.percent(35);
+triviaGroup.y = am4core.percent(20);
 triviaGroup.horizontalCenter = "middle";
 
-triviaGroup.disabled = true
+var togglePopulation = true;
+var toggleMedianAge = true;
+var toggleGDP = true;
+var toggleBirthRate = true;
+var toggleDeathRate = true;
+var togglePopulationGrowth = true;
+var toggleLaborForce = true;
+var toggleFlag = true;
+var toggleCapital = true;
 
+let tPopButton = triviaGroup.createChild(am4core.TextLink);
+tPopButton.margin(10,10,10,10);
+tPopButton.text = "Population: On"
+tPopButton.events.on("hit", function(){
+  togglePopulation = !togglePopulation
+  tPopButton.text = "Population: "
+  if(togglePopulation)
+    tPopButton.text += "On"
+  else
+    tPopButton.text += "Off"
+});
 
+let tMAButton = triviaGroup.createChild(am4core.TextLink);
+tMAButton.margin(10,10,10,10);
+tMAButton.text = "Median Age: On"
+tMAButton.events.on("hit", function(){
+  toggleMedianAge = !toggleMedianAge
+  tMAButton.text = "Median Age: "
+  if(toggleMedianAge)
+    tMAButton.text += "On"
+  else
+    tMAButton.text += "Off"
+});
+
+let tGDPButton = triviaGroup.createChild(am4core.TextLink);
+tGDPButton.margin(10,10,10,10);
+tGDPButton.text = "GDP(PPP): On"
+tGDPButton.events.on("hit", function(){
+  toggleGDP = !toggleGDP
+  tGDPButton.text = "GDP(PPP): "
+  if(toggleGDP)
+    tGDPButton.text += "On"
+  else
+    tGDPButton.text += "Off"
+});
+
+let tBRButton = triviaGroup.createChild(am4core.TextLink);
+tBRButton.margin(10,10,10,10);
+tBRButton.text = "Birth Rate: On"
+tBRButton.events.on("hit", function(){
+  toggleBirthRate = !toggleBirthRate
+  tBRButton.text = "Birth Rate: "
+  if(toggleBirthRate)
+    tBRButton.text += "On"
+  else
+    tBRButton.text += "Off"
+});
+
+let tDRButton = triviaGroup.createChild(am4core.TextLink);
+tDRButton.margin(10,10,10,10);
+tDRButton.text = "Death Rate: On"
+tDRButton.events.on("hit", function(){
+  toggleDeathRate = !toggleDeathRate
+  tDRButton.text = "Death Rate: "
+  if(toggleDeathRate)
+    tDRButton.text += "On"
+  else
+    tDRButton.text += "Off"
+});
+
+let tPGRButton = triviaGroup.createChild(am4core.TextLink);
+tPGRButton.margin(10,10,10,10);
+tPGRButton.text = "Population Growth Rate On"
+tPGRButton.events.on("hit", function(){
+  togglePopulationGrowth = !togglePopulationGrowth
+  tPGRButton.text = "Population Growth Rate "
+  if(togglePopulationGrowth)
+    tPGRButton.text += "On"
+  else
+    tPGRButton.text += "Off"
+});
+
+let tLFButton = triviaGroup.createChild(am4core.TextLink);
+tLFButton.margin(10,10,10,10);
+tLFButton.text = "Labor Force: On"
+tLFButton.events.on("hit", function(){
+  toggleLaborForce = !toggleLaborForce
+  tLFButton.text = "Labor Force: "
+  if(toggleLaborForce)
+    tLFButton.text += "On"
+  else
+    tLFButton.text += "Off"
+});
+
+let tFlagButton = triviaGroup.createChild(am4core.TextLink);
+tFlagButton.margin(10,10,10,10);
+tFlagButton.text = "Flag: On"
+tFlagButton.events.on("hit", function(){
+  toggleFlag= !toggleFlag
+  tFlagButton.text = "Flag: "
+  if(toggleFlag)
+    tFlagButton.text += "On"
+  else
+    tFlagButton.text += "Off"
+});
+
+let tCapitalButton = triviaGroup.createChild(am4core.TextLink);
+tCapitalButton.margin(10,10,10,10);
+tCapitalButton.text = "Capital: On"
+tCapitalButton.events.on("hit", function(){
+  toggleCapital = !toggleCapital
+  tCapitalButton.text = "Capital: "
+  if(toggleCapital)
+    tCapitalButton.text += "On"
+  else
+    tCapitalButton.text += "Off"
+});
+
+triviaGroup.disabled = true;
 
 let testChoices = chart.createChild(am4core.Container);
 testChoices.isMeasured = false;
 testChoices.layout = "vertical";
-testChoices.x = am4core.percent(5);
+testChoices.x = am4core.percent(3);
 testChoices.y = am4core.percent(20);
-testChoices.horizontalCenter = "middle";
+//testChoices.horizontalCenter = "middle";
 
 let choice1 = testChoices.createChild(am4core.TextLink);
 choice1.margin(10,10,10,10);
@@ -3569,11 +4222,10 @@ var onWD = true
 
 function clearChoices() {
   testChoices.disabled = true;
-  heatLegend.disabled = false;
-  if(!onWD) {
+  /*if(!onWD) {
     polygonSeries.data = worldData;
     onWD = true;
-  }
+  }*/
 }
 
 let activeState = polygonTemplate.states.create("active");
@@ -3581,8 +4233,8 @@ activeState.properties.fill = am4core.color("#3633d6");
 activeState.properties.hoverable = true;
 activeState.properties.clickable = true;
 
-//let hactiveState = polygonTemplate.states.create("hoverActive");
-
+let hactiveState = polygonTemplate.states.create("hoverActive");
+hactiveState.properties.fill = am4core.color("#02006e");
 
 function choiceSelection(ind: number, cind: number) {
   //console.log(ind)
@@ -3592,22 +4244,51 @@ function choiceSelection(ind: number, cind: number) {
     polygonSeries.getPolygonById(worldData[ind].id).defaultState.properties.clickable = false;
     polygonSeries.getPolygonById(worldData[ind].id).isActive = false
     polygonSeries.getPolygonById(worldData[ind].id).setState("correct")
-    //polygonSeries.invalidateData();
-    //polygonSeries.dataFields.value = "datum"
-    triviaGroup.disabled = false
     testButton.disabled = true
     nextQuestion.disabled = false
     if(!qWrong) {
       qCorrect += 1
     }
 
-    title.text = qTitle + " (" + qCorrect + "/" + qAsked + ")"
+    scoreDisplay.text = qCorrect + "/" + qAsked + "\n" + Math.floor(qCorrect/qAsked*100) + "%"
 
     if(!qWrong) {
-      title.text += "\nCorrect!"
+      title.text = "Correct!"
+      if(qdata == "flag" || qdata == "capital")
+        polygonSeries.data[cind]["score"] += 2
+      else
+        polygonSeries.data[cind]["score"] += 1
+    }
+    else {
+      title.text = "Correct"
+      if(qdata == "flag" || qdata == "capital")
+        polygonSeries.data[cind]["score"] -= .7
+      else
+        polygonSeries.data[cind]["score"] -= .4
     }
 
-    if(qdata == "median age")
+    if(qdata == "flag") {
+
+    }
+    else if(qdata == "capital") {
+      choice1.text += ": " + worldData[rc1][qdata]
+      choice2.text += ": " + worldData[rc2][qdata]
+      choice3.text += ": " + worldData[rc3][qdata]
+      choice4.text += ": " + worldData[rc4][qdata]
+    }
+    else {
+      choice1.text += ": " + String(worldData[rc1][qdata]).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+      choice2.text += ": " + String(worldData[rc2][qdata]).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+      choice3.text += ": " + String(worldData[rc3][qdata]).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+      choice4.text += ": " + String(worldData[rc4][qdata]).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+    }
+
+    choice1.clickable = false
+    choice2.clickable = false
+    choice3.clickable = false
+    choice4.clickable = false
+
+    /*if(qdata == "median age")
       tipMode = 1;
     else if(qdata == "birth rate" || qdata == "death rate") {
       tipMode = 4;
@@ -3615,10 +4296,17 @@ function choiceSelection(ind: number, cind: number) {
     else if(qdata == "population growth")
       tipMode = 2
     else
-      tipMode = 0;
+      tipMode = 0;*/
   }
   else {
+    title.text = "Wrong"
     qWrong = true
+    if(qdata == "flag" || qdata == "capital") {
+      polygonSeries.data[ind]["score"] -= .4
+    }
+    else {
+      polygonSeries.data[ind]["score"] -= .5
+    }
     polygonSeries.getPolygonById(worldData[ind].id).defaultState.properties.fill = am4core.color("#e01616");
     polygonSeries.getPolygonById(worldData[ind].id).defaultState.properties.clickable = false;
     polygonSeries.getPolygonById(worldData[ind].id).isActive = false
@@ -3628,8 +4316,47 @@ function choiceSelection(ind: number, cind: number) {
   }
 }
 
+var flagImage = chart.createChild(am4core.Image);
+flagImage.x = am4core.percent(15)
+flagImage.y = am4core.percent(12)
+flagImage.width = 120
+flagImage.height = 80
+flagImage.disabled = true
+
 function correctChoice(highest: boolean) {
   let cIndex = rc1;
+
+  if(qdata == "flag") {
+    cIndex = Math.floor(Math.random()*4)
+    if(cIndex == 0)
+      cIndex = rc1
+    else if(cIndex == 1)
+      cIndex = rc2
+    else if(cIndex == 2)
+      cIndex = rc3
+    else if(cIndex == 3)
+      cIndex = rc4
+
+    qTitle = "Which country does this flag belong to?"
+    flagImage.href = worldData[cIndex]["flag"]
+    flagImage.disabled = false
+    return cIndex
+  }
+  else if(qdata == "capital") {
+    cIndex = Math.floor(Math.random()*4)
+    if(cIndex == 0)
+      cIndex = rc1
+    else if(cIndex == 1)
+      cIndex = rc2
+    else if(cIndex == 2)
+      cIndex = rc3
+    else if(cIndex == 3)
+      cIndex = rc4
+
+    qTitle = "Which country's capital is " + worldData[cIndex]["capital"] + "?"
+    return cIndex
+  }
+
   if(highest) {
     if(polygonSeries.data[cIndex][qdata] < polygonSeries.data[rc2][qdata]) {
       cIndex = rc2;
@@ -3653,7 +4380,7 @@ function correctChoice(highest: boolean) {
     }
   }
 
-  //console.log(cIndex)
+  console.log("type: " + qdata + ", answer: " + worldData[cIndex].name + ": " + worldData[cIndex][qdata])
 
   return cIndex;
 }
@@ -3707,7 +4434,7 @@ popButton.margin(10,10,10,10);
 popButton.text = "Population";
 popButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.Projection();
-    clearChoices();
+    //clearChoices();
     title.text = "Population"
     tipMode = 0;
     /*polygonSeries.heatRules.push({
@@ -3717,9 +4444,11 @@ popButton.events.on("hit", function(){
       max: am4core.color("#AAAA00")
     });*/
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any).population)
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any).population)
+          mapPolygon.defaultState.properties.fill = undefined
+        }
     });
 
     //polygonSeries.dataFields.value = "population";
@@ -3731,7 +4460,7 @@ maButton.text = "Median Age";
 maButton.margin(10,10,10,10);
 maButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.maButton();
-    clearChoices();
+    //clearChoices();
     title.text = "Median Age"
     //polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('0.0')}";
     tipMode = 1;
@@ -3742,9 +4471,12 @@ maButton.events.on("hit", function(){
       max: am4core.color("#8573ff"),
     });*/
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any)["median age"])// = (mapPolygon.dataItem.dataContext as any).median age;
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any)["median age"])// = (mapPolygon.dataItem.dataContext as any).median age;
+          mapPolygon.defaultState.properties.fill = undefined
+        }
+
     });
 
     polygonSeries.dataFields.value = "median age";
@@ -3756,7 +4488,7 @@ gdpButton.text = "GDP (PPP)";
 gdpButton.margin(10,10,10,10);
 gdpButton.events.on("hit", function(){
     //chart.projection = new am4maps.projections.gdpButton();
-    clearChoices();
+    //clearChoices();
     title.text = "GDP (PPP)"
     tipMode = 0;
     /*polygonSeries.heatRules.push({
@@ -3766,9 +4498,11 @@ gdpButton.events.on("hit", function(){
       max: am4core.color("#60e645")
     });*/
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any)["GDP(PPP)"])
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any)["GDP(PPP)"])
+          mapPolygon.defaultState.properties.fill = undefined
+        }
     });
 
     polygonSeries.dataFields.value = "GDP(PPP)";
@@ -3779,13 +4513,15 @@ let birthRateButton = dataGroups.createChild(am4core.TextLink);
 birthRateButton.text = "Birth Rate";
 birthRateButton.margin(10,10,10,10);
 birthRateButton.events.on("hit", function(){
-    clearChoices();
+    //clearChoices();
     title.text = "Birth Rate"
     tipMode = 4;
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any)["birth rate"])
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any)["birth rate"])
+          mapPolygon.defaultState.properties.fill = undefined
+        }
     });
 
     polygonSeries.dataFields.value = "birth rate";
@@ -3795,13 +4531,15 @@ let deathRateButton = dataGroups.createChild(am4core.TextLink);
 deathRateButton.text = "Death Rate";
 deathRateButton.margin(10,10,10,10);
 deathRateButton.events.on("hit", function(){
-    clearChoices();
+    //clearChoices();
     title.text = "Death Rate"
     tipMode = 4;
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any)["death rate"])
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any)["death rate"])
+          mapPolygon.defaultState.properties.fill = undefined
+        }
     });
 
     polygonSeries.dataFields.value = "death rate";
@@ -3811,13 +4549,15 @@ let popGrowthButton = dataGroups.createChild(am4core.TextLink);
 popGrowthButton.text = "Population Growth";
 popGrowthButton.margin(10,10,10,10);
 popGrowthButton.events.on("hit", function(){
-    clearChoices();
+    //clearChoices();
     title.text = "Population Growth"
     tipMode = 2;
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any)["population growth"])
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any)["population growth"])
+          mapPolygon.defaultState.properties.fill = undefined
+        }
     });
 
     polygonSeries.dataFields.value = "population growth";
@@ -3827,13 +4567,15 @@ let laborForceButton = dataGroups.createChild(am4core.TextLink);
 laborForceButton.text = "Labor Force";
 laborForceButton.margin(10,10,10,10);
 laborForceButton.events.on("hit", function(){
-    clearChoices();
+    //clearChoices();
     title.text = "Labor Force"
     tipMode = 0;
 
-    polygonSeries.dataItems.each(function(dataItem) {
-        if(dataItem.dataContext)
-          dataItem.setValue("value", (dataItem.dataContext as any)["labor force"])
+    polygonSeries.mapPolygons.each(function(mapPolygon) {
+        if(mapPolygon.dataItem.dataContext) {
+          mapPolygon.dataItem.setValue("value", (mapPolygon.dataItem.dataContext as any)["labor force"])
+          mapPolygon.defaultState.properties.fill = undefined
+        }
     });
 
     polygonSeries.dataFields.value = "labor force";
@@ -3900,6 +4642,26 @@ greenHeatButton.events.on("hit", function(){
   polygonSeries.invalidateData()
 })
 
+var qDisplay = chart.createChild(am4core.Label);
+qDisplay.text = "";
+qDisplay.fontSize = 20;
+qDisplay.align = "center";
+qDisplay.isMeasured = false;
+qDisplay.x = am4core.percent(2);
+qDisplay.y = am4core.percent(15);
+
+qDisplay.disabled = true;
+
+var scoreDisplay = chart.createChild(am4core.Label);
+scoreDisplay.text = "";
+scoreDisplay.fontSize = 20;
+scoreDisplay.align = "center";
+scoreDisplay.isMeasured = false;
+scoreDisplay.x = am4core.percent(85);
+scoreDisplay.y = am4core.percent(15);
+
+scoreDisplay.disabled = true;
+
 var tHex = "#3633d6";
 var rc1 = 0;
 var rc2 = 0;
@@ -3921,6 +4683,13 @@ polygonTemplate.events.on("hit", function(ev) {
     if(ev.target.dataItem.dataContext && (ev.target.dataItem.dataContext as any).id == worldData[crc].id)
       choiceSelection(crc, crc)
     else {
+      title.text = "Wrong"
+      if(qdata == "flag" || qdata == "capital") {
+        (ev.target.dataItem.dataContext as any)["score"] -= .4
+      }
+      else {
+        (ev.target.dataItem.dataContext as any)["score"] -= .5
+      }
       qWrong = true
       ev.target.defaultState.properties.fill = am4core.color("#e01616");
       ev.target.defaultState.properties.clickable = false
@@ -3928,38 +4697,101 @@ polygonTemplate.events.on("hit", function(ev) {
       ev.target.setState("wrong")
     }
   }
+  else if(gqOn) {
+    if(ev.target.dataItem.dataContext && (ev.target.dataItem.dataContext as any).id == worldData[geoCountries[geoIterations]].id) {
+      if(tries == 3) {
+        ev.target.defaultState.properties.fill = am4core.color("#60e645");
+        gqScore += 1
+        scoreDisplay.text = gqScore + "/" + gqQuestions + "\n" + Math.floor(gqScore/gqQuestions*100) + "%";
+        (ev.target.dataItem.dataContext as any)["score"] += 1.5
+      }
+      else if(tries == 2) {
+        ev.target.defaultState.properties.fill = am4core.color("#d6d324");
+        (ev.target.dataItem.dataContext as any)["score"] -= .1
+      }
+      else if(tries == 1) {
+        ev.target.defaultState.properties.fill = am4core.color("#e38629");
+        (ev.target.dataItem.dataContext as any)["score"] -= .45
+      }
+      ev.target.defaultState.properties.clickable = false
+      ev.target.isActive = false
+      if(geoCountries.length - 1 != geoIterations) {
+        geoIterations += 1
+        tries = 3
+        title.text = "Tries: " + tries
+        qDisplay.text = "Select: " + worldData[geoCountries[geoIterations]].name
+      }
+      else {
+        qDisplay.text = "Finished!"
+        title.text = ""
+      }
+    }
+    else {
+      if(tries == 1) {
+        (ev.target.dataItem.dataContext as any)["score"] -= .35
+        polygonSeries.getPolygonById(worldData[geoCountries[geoIterations]].id).dataItem.dataContext["score"] -= 2.1
+        polygonSeries.getPolygonById(worldData[geoCountries[geoIterations]].id).defaultState.properties.fill = am4core.color("#e01616");
+        polygonSeries.getPolygonById(worldData[geoCountries[geoIterations]].id).defaultState.properties.clickable = false
+        polygonSeries.getPolygonById(worldData[geoCountries[geoIterations]].id).isActive = false
+        polygonSeries.getPolygonById(worldData[geoCountries[geoIterations]].id).setState("wrong")
+        if(geoCountries.length - 1 != geoIterations) {
+          geoIterations += 1
+          tries = 3
+          title.text = "Tries: " + tries
+          qDisplay.text = "Select: " + worldData[geoCountries[geoIterations]].name
+        }
+        else {
+          qDisplay.text = "Finished!"
+          title.text = ""
+        }
+      }
+      else {
+        (ev.target.dataItem.dataContext as any)["score"] -= .35
+        tries -= 1
+        title.text = "Tries: " + tries
+      }
+    }
+  }
 });
 
-let nextQuestion = triviaGroup.createChild(am4core.TextLink);
+let nextQuestion = testChoices.createChild(am4core.TextLink);
 nextQuestion.text = "Next";
 nextQuestion.margin(10,10,10,10);
 nextQuestion.events.on("hit", function(){
+    title.text = ""
     qWrong = false
     tipMode = 3;
     heatLegend.disabled = true
     nextQuestion.disabled = true
+    flagImage.disabled = true
 
     displayQuestion();
 });
 
 nextQuestion.disabled = true;
 
+var qTypes = []
+
 function displayQuestion() {
+  choice1.clickable = true
+  choice2.clickable = true
+  choice3.clickable = true
+  choice4.clickable = true
   qAsked += 1
-  rc1 = Math.floor(Math.random()*224);
+  rc1 = Math.floor(Math.random()*Object.keys(worldData).length);
   do {
-    rc2 = Math.floor(Math.random()*224);
+    rc2 = Math.floor(Math.random()*Object.keys(worldData).length);
   } while(rc2 == rc1);
   do {
-    rc3 = Math.floor(Math.random()*224);
+    rc3 = Math.floor(Math.random()*Object.keys(worldData).length);
   } while(rc3 == rc1 || rc3 == rc2);
   do {
-    rc4 = Math.floor(Math.random()*224);
+    rc4 = Math.floor(Math.random()*Object.keys(worldData).length);
   } while(rc4 == rc1 || rc4 == rc2 || rc4 == rc3);
 
   qTitle = "Select the highlighted country with the ";
   qhilo = Math.floor(Math.random()*2);
-  qType = Math.floor(Math.random()*7);
+  qType = Math.floor(Math.random()*qTypes.length);
   if(qhilo == 1) {
     highest = true;
     qTitle += "highest ";
@@ -3969,7 +4801,7 @@ function displayQuestion() {
     qTitle += "lowest ";
   }
 
-  if(qType == 0)
+  /*if(qType == 0)
     qdata = "population";
   else if(qType == 1)
     qdata = "median age";
@@ -3982,14 +4814,13 @@ function displayQuestion() {
   else if(qType == 5)
     qdata = "population growth";
   else if(qType == 6)
-    qdata = "labor force";
+    qdata = "labor force";*/
+  qdata = qTypes[qType]
 
   qTitle += qdata;
 
-  title.text = qTitle
-
   if(qAsked > 1)
-    title.text += " (" + qCorrect + "/" + qAsked + ")"
+    scoreDisplay.text = qCorrect + "/" + qAsked + "\n" + Math.floor(qCorrect/qAsked*100) + "%"
 
   onWD = false;
 
@@ -4001,7 +4832,11 @@ function displayQuestion() {
     mapPolygon.defaultState.properties.fill = undefined
   });
 
+  //polygonSeries.dataFields.value = qdata;
+
   crc = correctChoice(highest)
+
+  qDisplay.text = qTitle
 
   choice1.text = worldData[rc1].name;
   choice2.text = worldData[rc2].name;
@@ -4010,18 +4845,54 @@ function displayQuestion() {
 }
 
 let testButton = triviaGroup.createChild(am4core.TextLink);
-    testButton.text = "Start";
-    testButton.margin(10,10,10,10);
-    testButton.events.on("hit", function(){
-    testChoices.disabled = false;
-    triviaGroup.disabled = true;
-    tipMode = 3;
-    heatLegend.disabled = true
-    qWrong = false
+title.text = ""
+testButton.text = "Start";
+testButton.margin(10,10,10,10);
+testButton.events.on("hit", function(){
+  qCorrect = 0
+  qAsked = 0
+  scoreDisplay.text = ""
+  testChoices.disabled = false;
+  triviaGroup.disabled = true;
+  tipMode = 3;
+  heatLegend.disabled = true
+  qWrong = false
+  qDisplay.disabled = false
+  scoreDisplay.disabled = false
+  menuGroup.disabled = true
+  exitQuiz.disabled = false
 
-    displayQuestion();
+  qTypes = []
 
-    //polygonTemplate.propertyFields.fill = "fill";
+  if(togglePopulation) {
+    qTypes.push("population")
+  }
+  if(toggleMedianAge) {
+    qTypes.push("median age")
+  }
+  if(toggleGDP) {
+    qTypes.push("GDP(PPP)")
+  }
+  if(toggleBirthRate) {
+    qTypes.push("birth rate")
+  }
+  if(toggleDeathRate) {
+    qTypes.push("death rate")
+  }
+  if(togglePopulationGrowth) {
+    qTypes.push("population growth")
+  }
+  if(toggleLaborForce) {
+    qTypes.push("labor force")
+  }
+  if(toggleFlag) {
+    qTypes.push("flag")
+  }
+  if(toggleCapital) {
+    qTypes.push("capital")
+  }
+
+  displayQuestion();
 });
 
 let lc2 = chart.createChild(am4core.Container);
@@ -4048,8 +4919,8 @@ orthoButton.events.on("hit", function(){
 })
 
 });
-
 }
+
 
 ngOnDestroy() {
     this.zone.runOutsideAngular(() => {
