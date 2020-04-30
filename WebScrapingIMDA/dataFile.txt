@@ -1,0 +1,1809 @@
+[{
+	"id": "AF",
+	"name": "Afghanistan",
+	"population": 36643815,
+	"medianAge": 19.5,
+	"GDP(PPP)": 69450000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AF-flag.gif"
+
+}, {
+	"id": "AL",
+	"name": "Albania",
+	"population": 3074579,
+	"medianAge": 34.3,
+	"GDP(PPP)": 36010000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AL-flag.gif"
+
+}, {
+	"id": "DZ",
+	"name": "Algeria",
+	"population": 42972878,
+	"medianAge": 28.9,
+	"GDP(PPP)": 630000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AG-flag.gif"
+
+}, {
+	"id": "AS",
+	"name": "American Samoa",
+	"population": 49437,
+	"medianAge": 27.2,
+	"GDP(PPP)": 658000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AQ-flag.gif"
+
+}, {
+	"id": "AD",
+	"name": "Andorra",
+	"population": 77000,
+	"medianAge": 46.2,
+	"GDP(PPP)": 3327000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AN-flag.gif"
+
+}, {
+	"id": "AO",
+	"name": "Angola",
+	"population": 32522339,
+	"medianAge": 15.9,
+	"GDP(PPP)": 193600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AO-flag.gif"
+
+}, {
+	"id": "AI",
+	"name": "Anguilla",
+	"population": 18090,
+	"medianAge": 35.7,
+	"GDP(PPP)": 175400000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AV-flag.gif"
+
+}, {
+	"id": "AG",
+	"name": "Antigua and Barbuda",
+	"population": 98179,
+	"medianAge": 32.7,
+	"GDP(PPP)": 2398000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AC-flag.gif"
+
+}, {
+	"id": "AR",
+	"name": "Argentina",
+	"population": 45479118,
+	"medianAge": 32.4,
+	"GDP(PPP)": 922100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AR-flag.gif"
+
+}, {
+	"id": "AM",
+	"name": "Armenia",
+	"population": 3021324,
+	"medianAge": 36.6,
+	"GDP(PPP)": 28340000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AM-flag.gif"
+
+}, {
+	"id": "AW",
+	"name": "Aruba",
+	"population": 119428,
+	"medianAge": 39.9,
+	"GDP(PPP)": 4158000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AA-flag.gif"
+
+}, {
+	"id": "AU",
+	"name": "Australia",
+	"population": 25466459,
+	"medianAge": 37.5,
+	"GDP(PPP)": 1248000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AS-flag.gif"
+
+}, {
+	"id": "AT",
+	"name": "Austria",
+	"population": 8859449,
+	"medianAge": 44.5,
+	"GDP(PPP)": 441000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AU-flag.gif"
+
+}, {
+	"id": "AZ",
+	"name": "Azerbaijan",
+	"population": 10205810,
+	"medianAge": 32.6,
+	"GDP(PPP)": 172200000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AJ-flag.gif"
+
+}, {
+	"id": "BS",
+	"name": "The Bahamas",
+	"population": 337721,
+	"medianAge": 32.8,
+	"GDP(PPP)": 12060000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BF-flag.gif"
+
+}, {
+	"id": "BH",
+	"name": "Bahrain",
+	"population": 1505003,
+	"medianAge": 32.9,
+	"GDP(PPP)": 71170000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BA-flag.gif"
+
+}, {
+	"id": "BD",
+	"name": "Bangladesh",
+	"population": 162650853,
+	"medianAge": 27.9,
+	"GDP(PPP)": 690300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BG-flag.gif"
+
+}, {
+	"id": "BB",
+	"name": "Barbados",
+	"population": 294560,
+	"medianAge": 39.5,
+	"GDP(PPP)": 5218000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BB-flag.gif"
+
+}, {
+	"id": "BY",
+	"name": "Belarus",
+	"population": 9477918,
+	"medianAge": 40.9,
+	"GDP(PPP)": 179400000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BO-flag.gif"
+
+}, {
+	"id": "BE",
+	"name": "Belgium",
+	"population": 11720716,
+	"medianAge": 41.6,
+	"GDP(PPP)": 529200000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BE-flag.gif"
+
+}, {
+	"id": "BZ",
+	"name": "Belize",
+	"population": 399598,
+	"medianAge": 23.9,
+	"GDP(PPP)": 3218000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BH-flag.gif"
+
+}, {
+	"id": "BJ",
+	"name": "Benin",
+	"population": 12864634,
+	"medianAge": 17,
+	"GDP(PPP)": 25390000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BN-flag.gif"
+
+}, {
+	"id": "BM",
+	"name": "Bermuda",
+	"population": 71750,
+	"medianAge": 43.6,
+	"GDP(PPP)": 6127000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BD-flag.gif"
+
+}, {
+	"id": "BT",
+	"name": "Bhutan",
+	"population": 782318,
+	"medianAge": 29.1,
+	"GDP(PPP)": 7205000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BT-flag.gif"
+
+}, {
+	"id": "BO",
+	"name": "Bolivia",
+	"population": 11639909,
+	"medianAge": 25.3,
+	"GDP(PPP)": 83720000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BL-flag.gif"
+
+}, {
+	"id": "BA",
+	"name": "Bosnia and Herzegovina",
+	"population": 3835586,
+	"medianAge": 43.3,
+	"GDP(PPP)": 44830000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BK-flag.gif"
+
+}, {
+	"id": "BW",
+	"name": "Botswana",
+	"population": 2317233,
+	"medianAge": 25.7,
+	"GDP(PPP)": 39010000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BC-flag.gif"
+
+}, {
+	"id": "BR",
+	"name": "Brazil",
+	"population": 211715973,
+	"medianAge": 33.2,
+	"GDP(PPP)": 3248000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BR-flag.gif"
+
+}, {
+	"id": "VG",
+	"name": "British Virgin Islands",
+	"population": 37381,
+	"medianAge": 37.2,
+	"GDP(PPP)": 500000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VI-flag.gif"
+
+}, {
+	"id": "BN",
+	"name": "Brunei",
+	"population": 464478,
+	"medianAge": 31.1,
+	"GDP(PPP)": 33870000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BX-flag.gif"
+
+}, {
+	"id": "BG",
+	"name": "Bulgaria",
+	"population": 6966899,
+	"medianAge": 43.7,
+	"GDP(PPP)": 153500000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BU-flag.gif"
+
+}, {
+	"id": "BF",
+	"name": "Burkina Faso",
+	"population": 20835401,
+	"medianAge": 17.9,
+	"GDP(PPP)": 35850000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UV-flag.gif"
+
+}, {
+	"id": "MM",
+	"name": "Myanmar",
+	"population": 56590071,
+	"medianAge": 29.2,
+	"GDP(PPP)": 329800000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BM-flag.gif"
+
+}, {
+	"id": "BI",
+	"name": "Burundi",
+	"population": 11865821,
+	"medianAge": 17.7,
+	"GDP(PPP)": 8007000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BY-flag.gif"
+
+}, {
+	"id": "CV",
+	"name": "Cabo Verde",
+	"population": 583255,
+	"medianAge": 26.8,
+	"GDP(PPP)": 3777000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CV-flag.gif"
+
+}, {
+	"id": "KH",
+	"name": "Cambodia",
+	"population": 16926984,
+	"medianAge": 26.4,
+	"GDP(PPP)": 64210000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CB-flag.gif"
+
+}, {
+	"id": "CM",
+	"name": "Cameroon",
+	"population": 27744989,
+	"medianAge": 18.5,
+	"GDP(PPP)": 89540000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CM-flag.gif"
+
+}, {
+	"id": "CA",
+	"name": "Canada",
+	"population": 37694085,
+	"medianAge": 41.8,
+	"GDP(PPP)": 1774000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CA-flag.gif"
+
+}, {
+	"id": "KY",
+	"name": "Cayman Islands",
+	"population": 61944,
+	"medianAge": 40.5,
+	"GDP(PPP)": 2507000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CJ-flag.gif"
+
+}, {
+	"id": "CF",
+	"name": "Central African Republic",
+	"population": 5990855,
+	"medianAge": 20,
+	"GDP(PPP)": 3390000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CT-flag.gif"
+
+}, {
+	"id": "TD",
+	"name": "Chad",
+	"population": 16877357,
+	"medianAge": 16.1,
+	"GDP(PPP)": 28620000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CD-flag.gif"
+
+}, {
+	"id": "CL",
+	"name": "Chile",
+	"population": 18186770,
+	"medianAge": 35.5,
+	"GDP(PPP)": 452100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CI-flag.gif"
+
+}, {
+	"id": "CN",
+	"name": "China",
+	"population": 1394015977,
+	"medianAge": 38.4,
+	"GDP(PPP)": 25360000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CH-flag.gif"
+
+}, {
+	"id": "CO",
+	"name": "Colombia",
+	"population": 49084841,
+	"medianAge": 31.2,
+	"GDP(PPP)": 711600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CO-flag.gif"
+
+}, {
+	"id": "KM",
+	"name": "Comoros",
+	"population": 846281,
+	"medianAge": 20.9,
+	"GDP(PPP)": 1319000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CN-flag.gif"
+
+}, {
+	"id": "CD",
+	"name": "Democratic Republic of the Congo",
+	"population": 101780263,
+	"medianAge": 16.7,
+	"GDP(PPP)": 68600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CG-flag.gif"
+
+}, {
+	"id": "CG",
+	"name": "Republic of the Congo",
+	"population": 5293070,
+	"medianAge": 19.5,
+	"GDP(PPP)": 29390000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CF-flag.gif"
+
+}, {
+	"id": "CK",
+	"name": "Cook Islands",
+	"population": 8574,
+	"medianAge": 38.3,
+	"GDP(PPP)": 299900000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CW-flag.gif"
+
+}, {
+	"id": "CR",
+	"name": "Costa Rica",
+	"population": 5097988,
+	"medianAge": 32.6,
+	"GDP(PPP)": 83940000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CS-flag.gif"
+
+}, {
+	"id": "CI",
+	"name": "Cote d'Ivoire",
+	"population": 27481086,
+	"medianAge": 20.3,
+	"GDP(PPP)": 97160000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IV-flag.gif"
+
+}, {
+	"id": "HR",
+	"name": "Croatia",
+	"population": 4227746,
+	"medianAge": 43.9,
+	"GDP(PPP)": 102100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HR-flag.gif"
+
+}, {
+	"id": "CU",
+	"name": "Cuba",
+	"population": 11059062,
+	"medianAge": 42.1,
+	"GDP(PPP)": 137000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CU-flag.gif"
+
+}, {
+	"id": "CW",
+	"name": "Curacao",
+	"population": 151345,
+	"medianAge": 36.7,
+	"GDP(PPP)": 3128000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UC-flag.gif"
+
+}, {
+	"id": "CY",
+	"name": "Cyprus",
+	"population": 1266676,
+	"medianAge": 37.9,
+	"GDP(PPP)": 31780000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CY-flag.gif"
+
+}, {
+	"id": "CZ",
+	"name": "Czechia",
+	"population": 10702498,
+	"medianAge": 43.3,
+	"GDP(PPP)": 375900000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EZ-flag.gif"
+
+}, {
+	"id": "DK",
+	"name": "Denmark",
+	"population": 5869410,
+	"medianAge": 42,
+	"GDP(PPP)": 287800000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DA-flag.gif"
+
+}, {
+	"id": "DJ",
+	"name": "Djibouti",
+	"population": 921804,
+	"medianAge": 24.9,
+	"GDP(PPP)": 3640000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DJ-flag.gif"
+
+}, {
+	"id": "DM",
+	"name": "Dominica",
+	"population": 74243,
+	"medianAge": 34.9,
+	"GDP(PPP)": 783000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DO-flag.gif"
+
+}, {
+	"id": "DO",
+	"name": "Dominican Republic",
+	"population": 10499707,
+	"medianAge": 27.9,
+	"GDP(PPP)": 173000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/DR-flag.gif"
+
+}, {
+	"id": "EC",
+	"name": "Ecuador",
+	"population": 16904867,
+	"medianAge": 28.8,
+	"GDP(PPP)": 193000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EC-flag.gif"
+
+}, {
+	"id": "EG",
+	"name": "Egypt",
+	"population": 104124440,
+	"medianAge": 24.1,
+	"GDP(PPP)": 1204000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EG-flag.gif"
+
+}, {
+	"id": "SV",
+	"name": "El Salvador",
+	"population": 6481102,
+	"medianAge": 27.7,
+	"GDP(PPP)": 51170000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ES-flag.gif"
+
+}, {
+	"id": "GQ",
+	"name": "Equatorial Guinea",
+	"population": 836178,
+	"medianAge": 20.3,
+	"GDP(PPP)": 31520000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EK-flag.gif"
+
+}, {
+	"id": "ER",
+	"name": "Eritrea",
+	"population": 6081196,
+	"medianAge": 20.3,
+	"GDP(PPP)": 9402000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ER-flag.gif"
+
+}, {
+	"id": "EE",
+	"name": "Estonia",
+	"population": 1228624,
+	"medianAge": 43.7,
+	"GDP(PPP)": 41650000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EN-flag.gif"
+
+}, {
+	"id": "SZ",
+	"name": "Eswatini",
+	"population": 1104479,
+	"medianAge": 23.7,
+	"GDP(PPP)": 11600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WZ-flag.gif"
+
+}, {
+	"id": "ET",
+	"name": "Ethiopia",
+	"population": 108113150,
+	"medianAge": 19.8,
+	"GDP(PPP)": 200600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ET-flag.gif"
+
+}, {
+	"id": "FO",
+	"name": "Faroe Islands",
+	"population": 51628,
+	"medianAge": 37.2,
+	"GDP(PPP)": 2001000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FO-flag.gif"
+
+}, {
+	"id": "FJ",
+	"name": "Fiji",
+	"population": 935974,
+	"medianAge": 29.9,
+	"GDP(PPP)": 8629000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FJ-flag.gif"
+
+}, {
+	"id": "FI",
+	"name": "Finland",
+	"population": 5571665,
+	"medianAge": 42.8,
+	"GDP(PPP)": 244900000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FI-flag.gif"
+
+}, {
+	"id": "FR",
+	"name": "France",
+	"population": 67848156,
+	"medianAge": 41.7,
+	"GDP(PPP)": 2856000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FR-flag.gif"
+
+}, {
+	"id": "PF",
+	"name": "French Polynesia",
+	"population": 295121,
+	"medianAge": 33.3,
+	"GDP(PPP)": 5490000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FP-flag.gif"
+
+}, {
+	"id": "GA",
+	"name": "Gabon",
+	"population": 2230908,
+	"medianAge": 21,
+	"GDP(PPP)": 36660000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GB-flag.gif"
+
+}, {
+	"id": "GM",
+	"name": "Gambia",
+	"population": 2173999,
+	"medianAge": 21.8,
+	"GDP(PPP)": 5556000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GA-flag.gif"
+
+}, {
+	"id": "GE",
+	"name": "Georgia",
+	"population": 3997000,
+	"medianAge": 38.6,
+	"GDP(PPP)": 39850000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GG-flag.gif"
+
+}, {
+	"id": "DE",
+	"name": "Germany",
+	"population": 80159662,
+	"medianAge": 47.8,
+	"GDP(PPP)": 4199000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GM-flag.gif"
+
+}, {
+	"id": "GH",
+	"name": "Ghana",
+	"population": 29340248,
+	"medianAge": 21.4,
+	"GDP(PPP)": 134000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GH-flag.gif"
+
+}, {
+	"id": "GI",
+	"name": "Gibraltar",
+	"population": 29581,
+	"medianAge": 35.5,
+	"GDP(PPP)": 2044000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GI-flag.gif"
+
+}, {
+	"id": "GR",
+	"name": "Greece",
+	"population": 10607051,
+	"medianAge": 45.3,
+	"GDP(PPP)": 299300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GR-flag.gif"
+
+}, {
+	"id": "GL",
+	"name": "Greenland",
+	"population": 57616,
+	"medianAge": 34.3,
+	"GDP(PPP)": 2413000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GL-flag.gif"
+
+}, {
+	"id": "GD",
+	"name": "Grenada",
+	"population": 113094,
+	"medianAge": 33.3,
+	"GDP(PPP)": 1634000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GJ-flag.gif"
+
+}, {
+	"id": "GU",
+	"name": "Guam",
+	"population": 168485,
+	"medianAge": 29.4,
+	"GDP(PPP)": 5793000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GQ-flag.gif"
+
+}, {
+	"id": "GT",
+	"name": "Guatemala",
+	"population": 17153288,
+	"medianAge": 23.2,
+	"GDP(PPP)": 138100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GT-flag.gif"
+
+}, {
+	"id": "GG",
+	"name": "Guernsey",
+	"population": 67052,
+	"medianAge": 44.3,
+	"GDP(PPP)": 3465000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GK-flag.gif"
+
+}, {
+	"id": "GN",
+	"name": "Guinea",
+	"population": 12527440,
+	"medianAge": 19.1,
+	"GDP(PPP)": 27970000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GV-flag.gif"
+
+}, {
+	"id": "GW",
+	"name": "Guinea-Bissau",
+	"population": 1927104,
+	"medianAge": 18,
+	"GDP(PPP)": 3171000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PU-flag.gif"
+
+}, {
+	"id": "GY",
+	"name": "Guyana",
+	"population": 750204,
+	"medianAge": 27.5,
+	"GDP(PPP)": 6301000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/GY-flag.gif"
+
+}, {
+	"id": "HT",
+	"name": "Haiti",
+	"population": 11067777,
+	"medianAge": 24.1,
+	"GDP(PPP)": 19970000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HA-flag.gif"
+
+}, {
+	"id": "HN",
+	"name": "Honduras",
+	"population": 9235340,
+	"medianAge": 24.4,
+	"GDP(PPP)": 46300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HO-flag.gif"
+
+}, {
+	"id": "HK",
+	"name": "Hong Kong",
+	"population": 7249907,
+	"medianAge": 45.6,
+	"GDP(PPP)": 480500000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HK-flag.gif"
+
+}, {
+	"id": "HU",
+	"name": "Hungary",
+	"population": 9771827,
+	"medianAge": 43.6,
+	"GDP(PPP)": 289600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/HU-flag.gif"
+
+}, {
+	"id": "IS",
+	"name": "Iceland",
+	"population": 350734,
+	"medianAge": 37.1,
+	"GDP(PPP)": 18180000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IC-flag.gif"
+
+}, {
+	"id": "IN",
+	"name": "India",
+	"population": 1326093247,
+	"medianAge": 28.7,
+	"GDP(PPP)": 9474000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IN-flag.gif"
+
+}, {
+	"id": "ID",
+	"name": "Indonesia",
+	"population": 267026366,
+	"medianAge": 31.1,
+	"GDP(PPP)": 3250000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ID-flag.gif"
+
+}, {
+	"id": "IR",
+	"name": "Iran",
+	"population": 84923314,
+	"medianAge": 31.7,
+	"GDP(PPP)": 1640000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IR-flag.gif"
+
+}, {
+	"id": "IQ",
+	"name": "Iraq",
+	"population": 38872655,
+	"medianAge": 21.2,
+	"GDP(PPP)": 649300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IZ-flag.gif"
+
+}, {
+	"id": "IE",
+	"name": "Ireland",
+	"population": 5176569,
+	"medianAge": 37.8,
+	"GDP(PPP)": 353300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/EI-flag.gif"
+
+}, {
+	"id": "IM",
+	"name": "Isle of Man",
+	"population": 90499,
+	"medianAge": 44.6,
+	"GDP(PPP)": 6792000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IM-flag.gif"
+
+}, {
+	"id": "IL",
+	"name": "Israel",
+	"population": 8675475,
+	"medianAge": 30.4,
+	"GDP(PPP)": 317100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IS-flag.gif"
+
+}, {
+	"id": "IT",
+	"name": "Italy",
+	"population": 62402659,
+	"medianAge": 46.5,
+	"GDP(PPP)": 2317000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/IT-flag.gif"
+
+}, {
+	"id": "JM",
+	"name": "Jamaica",
+	"population": 2808570,
+	"medianAge": 29.4,
+	"GDP(PPP)": 26060000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JM-flag.gif"
+
+}, {
+	"id": "JP",
+	"name": "Japan",
+	"population": 125507472,
+	"medianAge": 48.6,
+	"GDP(PPP)": 5443000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JA-flag.gif"
+
+}, {
+	"id": "JE",
+	"name": "Jersey",
+	"population": 101073,
+	"medianAge": 37.5,
+	"GDP(PPP)": 5569000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JE-flag.gif"
+
+}, {
+	"id": "JO",
+	"name": "Jordan",
+	"population": 10820644,
+	"medianAge": 23.5,
+	"GDP(PPP)": 89000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/JO-flag.gif"
+
+}, {
+	"id": "KZ",
+	"name": "Kazakhstan",
+	"population": 19091949,
+	"medianAge": 31.6,
+	"GDP(PPP)": 478600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KZ-flag.gif"
+
+}, {
+	"id": "KE",
+	"name": "Kenya",
+	"population": 53527936,
+	"medianAge": 20,
+	"GDP(PPP)": 163700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KE-flag.gif"
+
+}, {
+	"id": "KI",
+	"name": "Kiribati",
+	"population": 111796,
+	"medianAge": 25.7,
+	"GDP(PPP)": 227000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KR-flag.gif"
+
+}, {
+	"id": "KP",
+	"name": "North Korea",
+	"population": 25643466,
+	"medianAge": 34.6,
+	"GDP(PPP)": 40000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KN-flag.gif"
+
+}, {
+	"id": "KR",
+	"name": "South Korea",
+	"population": 51835110,
+	"medianAge": 43.2,
+	"GDP(PPP)": 2035000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KS-flag.gif"
+
+}, {
+	"id": "XK",
+	"name": "Kosovo",
+	"population": 1932774,
+	"medianAge": 30.5,
+	"GDP(PPP)": 19600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KV-flag.gif"
+
+}, {
+	"id": "KW",
+	"name": "Kuwait",
+	"population": 2993706,
+	"medianAge": 29.7,
+	"GDP(PPP)": 289700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KU-flag.gif"
+
+}, {
+	"id": "KG",
+	"name": "Kyrgyzstan",
+	"population": 5964897,
+	"medianAge": 27.3,
+	"GDP(PPP)": 23150000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/KG-flag.gif"
+
+}, {
+	"id": "LA",
+	"name": "Laos",
+	"population": 7447396,
+	"medianAge": 24,
+	"GDP(PPP)": 49340000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LA-flag.gif"
+
+}, {
+	"id": "LV",
+	"name": "Latvia",
+	"population": 1881232,
+	"medianAge": 44.4,
+	"GDP(PPP)": 54020000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LG-flag.gif"
+
+}, {
+	"id": "LB",
+	"name": "Lebanon",
+	"population": 5469612,
+	"medianAge": 33.7,
+	"GDP(PPP)": 88250000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LE-flag.gif"
+
+}, {
+	"id": "LS",
+	"name": "Lesotho",
+	"population": 1969334,
+	"medianAge": 24.7,
+	"GDP(PPP)": 6656000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LT-flag.gif"
+
+}, {
+	"id": "LR",
+	"name": "Liberia",
+	"population": 5073296,
+	"medianAge": 18,
+	"GDP(PPP)": 6112000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LI-flag.gif"
+
+}, {
+	"id": "LY",
+	"name": "Libya",
+	"population": 6890535,
+	"medianAge": 25.8,
+	"GDP(PPP)": 61970000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LY-flag.gif"
+
+}, {
+	"id": "LI",
+	"name": "Liechtenstein",
+	"population": 39137,
+	"medianAge": 43.7,
+	"GDP(PPP)": 4978000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LS-flag.gif"
+
+}, {
+	"id": "LT",
+	"name": "Lithuania",
+	"population": 2731464,
+	"medianAge": 44.5,
+	"GDP(PPP)": 91470000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LH-flag.gif"
+
+}, {
+	"id": "LU",
+	"name": "Luxembourg",
+	"population": 628381,
+	"medianAge": 39.5,
+	"GDP(PPP)": 62110000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LU-flag.gif"
+
+}, {
+	"id": "MO",
+	"name": "Macau",
+	"population": 614458,
+	"medianAge": 40.8,
+	"GDP(PPP)": 77330000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MC-flag.gif"
+
+}, {
+	"id": "MG",
+	"name": "Madagascar",
+	"population": 26955737,
+	"medianAge": 20.3,
+	"GDP(PPP)": 39850000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MA-flag.gif"
+
+}, {
+	"id": "MW",
+	"name": "Malawi",
+	"population": 21196629,
+	"medianAge": 16.8,
+	"GDP(PPP)": 22420000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MI-flag.gif"
+
+}, {
+	"id": "MY",
+	"name": "Malaysia",
+	"population": 32652083,
+	"medianAge": 29.2,
+	"GDP(PPP)": 933300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MY-flag.gif"
+
+}, {
+	"id": "MV",
+	"name": "Maldives",
+	"population": 391904,
+	"medianAge": 29.5,
+	"GDP(PPP)": 6901000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MV-flag.gif"
+
+}, {
+	"id": "ML",
+	"name": "Mali",
+	"population": 19553397,
+	"medianAge": 16,
+	"GDP(PPP)": 41220000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ML-flag.gif"
+
+}, {
+	"id": "MT",
+	"name": "Malta",
+	"population": 457267,
+	"medianAge": 42.3,
+	"GDP(PPP)": 19260000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MT-flag.gif"
+
+}, {
+	"id": "MH",
+	"name": "Marshall Islands",
+	"population": 77917,
+	"medianAge": 23.8,
+	"GDP(PPP)": 196000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RM-flag.gif"
+
+}, {
+	"id": "MR",
+	"name": "Mauritania",
+	"population": 4005475,
+	"medianAge": 21,
+	"GDP(PPP)": 17280000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MR-flag.gif"
+
+}, {
+	"id": "MU",
+	"name": "Mauritius",
+	"population": 1379365,
+	"medianAge": 36.3,
+	"GDP(PPP)": 28270000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MP-flag.gif"
+
+}, {
+	"id": "MX",
+	"name": "Mexico",
+	"population": 128649565,
+	"medianAge": 29.3,
+	"GDP(PPP)": 2463000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MX-flag.gif"
+
+}, {
+	"id": "FM",
+	"name": "Federated States of Micronesia",
+	"population": 102436,
+	"medianAge": 26.3,
+	"GDP(PPP)": 348000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/FM-flag.gif"
+
+}, {
+	"id": "MD",
+	"name": "Moldova",
+	"population": 3364496,
+	"medianAge": 37.7,
+	"GDP(PPP)": 23720000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MD-flag.gif"
+
+}, {
+	"id": "MC",
+	"name": "Monaco",
+	"population": 39000,
+	"medianAge": 55.4,
+	"GDP(PPP)": 7672000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MN-flag.gif"
+
+}, {
+	"id": "MN",
+	"name": "Mongolia",
+	"population": 3168026,
+	"medianAge": 29.8,
+	"GDP(PPP)": 43540000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MG-flag.gif"
+
+}, {
+	"id": "ME",
+	"name": "Montenegro",
+	"population": 609859,
+	"medianAge": 39.6,
+	"GDP(PPP)": 11080000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MJ-flag.gif"
+
+}, {
+	"id": "MS",
+	"name": "Montserrat",
+	"population": 5373,
+	"medianAge": 34.8,
+	"GDP(PPP)": 167400000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MH-flag.gif"
+
+}, {
+	"id": "MA",
+	"name": "Morocco",
+	"population": 35561654,
+	"medianAge": 29.1,
+	"GDP(PPP)": 298600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MO-flag.gif"
+
+}, {
+	"id": "MZ",
+	"name": "Mozambique",
+	"population": 30098197,
+	"medianAge": 17,
+	"GDP(PPP)": 37090000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MZ-flag.gif"
+
+}, {
+	"id": "NA",
+	"name": "Namibia",
+	"population": 2630073,
+	"medianAge": 21.8,
+	"GDP(PPP)": 26600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WA-flag.gif"
+
+}, {
+	"id": "NR",
+	"name": "Nauru",
+	"population": 11000,
+	"medianAge": 27,
+	"GDP(PPP)": 160000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NR-flag.gif"
+
+}, {
+	"id": "NP",
+	"name": "Nepal",
+	"population": 30327877,
+	"medianAge": 25.3,
+	"GDP(PPP)": 79190000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NP-flag.gif"
+
+}, {
+	"id": "NL",
+	"name": "Netherlands",
+	"population": 17280397,
+	"medianAge": 42.8,
+	"GDP(PPP)": 924400000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NL-flag.gif"
+
+}, {
+	"id": "NC",
+	"name": "New Caledonia",
+	"population": 290009,
+	"medianAge": 32.9,
+	"GDP(PPP)": 11110000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NC-flag.gif"
+
+}, {
+	"id": "NZ",
+	"name": "New Zealand",
+	"population": 4925477,
+	"medianAge": 37.2,
+	"GDP(PPP)": 189000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NZ-flag.gif"
+
+}, {
+	"id": "NI",
+	"name": "Nicaragua",
+	"population": 6203441,
+	"medianAge": 27.3,
+	"GDP(PPP)": 36400000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NU-flag.gif"
+
+}, {
+	"id": "NE",
+	"name": "Niger",
+	"population": 22772361,
+	"medianAge": 14.8,
+	"GDP(PPP)": 21860000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NG-flag.gif"
+
+}, {
+	"id": "NG",
+	"name": "Nigeria",
+	"population": 214028302,
+	"medianAge": 18.6,
+	"GDP(PPP)": 1121000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NI-flag.gif"
+
+}, {
+	"id": "MK",
+	"name": "North Macedonia",
+	"population": 2125971,
+	"medianAge": 39,
+	"GDP(PPP)": 31030000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MK-flag.gif"
+
+}, {
+	"id": "MP",
+	"name": "Northern Mariana Islands",
+	"population": 51433,
+	"medianAge": 32.8,
+	"GDP(PPP)": 1242000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CQ-flag.gif"
+
+}, {
+	"id": "NO",
+	"name": "Norway",
+	"population": 5467439,
+	"medianAge": 39.5,
+	"GDP(PPP)": 381200000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NO-flag.gif"
+
+}, {
+	"id": "OM",
+	"name": "Oman",
+	"population": 4664844,
+	"medianAge": 26.2,
+	"GDP(PPP)": 190100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/MU-flag.gif"
+
+}, {
+	"id": "PK",
+	"name": "Pakistan",
+	"population": 233500636,
+	"medianAge": 22,
+	"GDP(PPP)": 1061000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PK-flag.gif"
+
+}, {
+	"id": "PW",
+	"name": "Palau",
+	"population": 21685,
+	"medianAge": 33.9,
+	"GDP(PPP)": 264000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PS-flag.gif"
+
+}, {
+	"id": "PA",
+	"name": "Panama",
+	"population": 3894082,
+	"medianAge": 30.1,
+	"GDP(PPP)": 104100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PM-flag.gif"
+
+}, {
+	"id": "PG",
+	"name": "Papua New Guinea",
+	"population": 7259456,
+	"medianAge": 24,
+	"GDP(PPP)": 30190000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PP-flag.gif"
+
+}, {
+	"id": "PY",
+	"name": "Paraguay",
+	"population": 7191685,
+	"medianAge": 29.7,
+	"GDP(PPP)": 88910000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PA-flag.gif"
+
+}, {
+	"id": "PE",
+	"name": "Peru",
+	"population": 31914989,
+	"medianAge": 29.1,
+	"GDP(PPP)": 430300000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PE-flag.gif"
+
+}, {
+	"id": "PH",
+	"name": "Philippines",
+	"population": 109180815,
+	"medianAge": 24.1,
+	"GDP(PPP)": 877200000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RP-flag.gif"
+
+}, {
+	"id": "PL",
+	"name": "Poland",
+	"population": 38282325,
+	"medianAge": 41.9,
+	"GDP(PPP)": 1126000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PL-flag.gif"
+
+}, {
+	"id": "PT",
+	"name": "Portugal",
+	"population": 10302674,
+	"medianAge": 44.6,
+	"GDP(PPP)": 314100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/PO-flag.gif"
+
+}, {
+	"id": "PR",
+	"name": "Puerto Rico",
+	"population": 3189068,
+	"medianAge": 43.6,
+	"GDP(PPP)": 130000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RQ-flag.gif"
+
+}, {
+	"id": "QA",
+	"name": "Qatar",
+	"population": 2444174,
+	"medianAge": 33.7,
+	"GDP(PPP)": 339500000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/QA-flag.gif"
+
+}, {
+	"id": "RO",
+	"name": "Romania",
+	"population": 21302893,
+	"medianAge": 42.5,
+	"GDP(PPP)": 483400000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RO-flag.gif"
+
+}, {
+	"id": "RU",
+	"name": "Russia",
+	"population": 141722205,
+	"medianAge": 40.3,
+	"GDP(PPP)": 4016000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RS-flag.gif"
+
+}, {
+	"id": "RW",
+	"name": "Rwanda",
+	"population": 12712431,
+	"medianAge": 19.7,
+	"GDP(PPP)": 24680000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RW-flag.gif"
+
+}, {
+	"id": "SH",
+	"name": "Saint Helena, Ascension, and Tristan da Cunha",
+	"population": 7862,
+	"medianAge": 43.2,
+	"GDP(PPP)": 31100000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SH-flag.gif"
+
+}, {
+	"id": "KN",
+	"name": "Saint Kitts and Nevis",
+	"population": 53821,
+	"medianAge": 36.5,
+	"GDP(PPP)": 1550000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SC-flag.gif"
+
+}, {
+	"id": "LC",
+	"name": "Saint Lucia",
+	"population": 166487,
+	"medianAge": 36.9,
+	"GDP(PPP)": 2542000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ST-flag.gif"
+
+}, {
+	"id": "MF",
+	"name": "Saint Martin",
+	"population": 32556,
+	"medianAge": 33.3,
+	"GDP(PPP)": 561500000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RN-flag.gif"
+
+}, {
+	"id": "PM",
+	"name": "Saint Pierre and Miquelon",
+	"population": 5347,
+	"medianAge": 48.5,
+	"GDP(PPP)": 261300000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SB-flag.gif"
+
+}, {
+	"id": "VC",
+	"name": "Saint Vincent and the Grenadines",
+	"population": 101390,
+	"medianAge": 35.3,
+	"GDP(PPP)": 1265000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VC-flag.gif"
+
+}, {
+	"id": "WS",
+	"name": "Samoa",
+	"population": 203774,
+	"medianAge": 25.6,
+	"GDP(PPP)": 1137000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WS-flag.gif"
+
+}, {
+	"id": "SM",
+	"name": "San Marino",
+	"population": 34232,
+	"medianAge": 45.2,
+	"GDP(PPP)": 2064000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SM-flag.gif"
+
+}, {
+	"id": "ST",
+	"name": "Sao Tome and Principe",
+	"population": 211122,
+	"medianAge": 19.3,
+	"GDP(PPP)": 686000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TP-flag.gif"
+
+}, {
+	"id": "SA",
+	"name": "Saudi Arabia",
+	"population": 34173498,
+	"medianAge": 30.8,
+	"GDP(PPP)": 1775000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SA-flag.gif"
+
+}, {
+	"id": "SN",
+	"name": "Senegal",
+	"population": 15736368,
+	"medianAge": 19.4,
+	"GDP(PPP)": 54800000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SG-flag.gif"
+
+}, {
+	"id": "RS",
+	"name": "Serbia",
+	"population": 7012165,
+	"medianAge": 43.4,
+	"GDP(PPP)": 105700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/RI-flag.gif"
+
+}, {
+	"id": "SC",
+	"name": "Seychelles",
+	"population": 95981,
+	"medianAge": 36.8,
+	"GDP(PPP)": 2750000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SE-flag.gif"
+
+}, {
+	"id": "SL",
+	"name": "Sierra Leone",
+	"population": 6624933,
+	"medianAge": 19.1,
+	"GDP(PPP)": 11550000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SL-flag.gif"
+
+}, {
+	"id": "SG",
+	"name": "Singapore",
+	"population": 6209660,
+	"medianAge": 35.6,
+	"GDP(PPP)": 528100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SN-flag.gif"
+
+}, {
+	"id": "SX",
+	"name": "Sint Maarten",
+	"population": 43847,
+	"medianAge": 41.1,
+	"GDP(PPP)": 365800000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NN-flag.gif"
+
+}, {
+	"id": "SK",
+	"name": "Slovakia",
+	"population": 5440602,
+	"medianAge": 41.8,
+	"GDP(PPP)": 179700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/LO-flag.gif"
+
+}, {
+	"id": "SI",
+	"name": "Slovenia",
+	"population": 2102678,
+	"medianAge": 44.9,
+	"GDP(PPP)": 71230000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SI-flag.gif"
+
+}, {
+	"id": "SB",
+	"name": "Solomon Islands",
+	"population": 685097,
+	"medianAge": 23.5,
+	"GDP(PPP)": 1330000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/BP-flag.gif"
+
+}, {
+	"id": "SO",
+	"name": "Somalia",
+	"population": 11757124,
+	"medianAge": 18.5,
+	"GDP(PPP)": 20440000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SO-flag.gif"
+
+}, {
+	"id": "ZA",
+	"name": "South Africa",
+	"population": 56463617,
+	"medianAge": 28,
+	"GDP(PPP)": 767200000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SF-flag.gif"
+
+}, {
+	"id": "SS",
+	"name": "South Sudan",
+	"population": 10561244,
+	"medianAge": 18.6,
+	"GDP(PPP)": 20010000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/OD-flag.gif"
+
+}, {
+	"id": "ES",
+	"name": "Spain",
+	"population": 50015792,
+	"medianAge": 43.9,
+	"GDP(PPP)": 1778000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SP-flag.gif"
+
+}, {
+	"id": "LK",
+	"name": "Sri Lanka",
+	"population": 22889201,
+	"medianAge": 33.7,
+	"GDP(PPP)": 275800000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CE-flag.gif"
+
+}, {
+	"id": "SD",
+	"name": "Sudan",
+	"population": 45561556,
+	"medianAge": 18.3,
+	"GDP(PPP)": 177400000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SU-flag.gif"
+
+}, {
+	"id": "SR",
+	"name": "Suriname",
+	"population": 609569,
+	"medianAge": 31,
+	"GDP(PPP)": 8688000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NS-flag.gif"
+
+}, {
+	"id": "SE",
+	"name": "Sweden",
+	"population": 10202491,
+	"medianAge": 41.1,
+	"GDP(PPP)": 518000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SW-flag.gif"
+
+}, {
+	"id": "CH",
+	"name": "Switzerland",
+	"population": 8403994,
+	"medianAge": 42.7,
+	"GDP(PPP)": 523100000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SZ-flag.gif"
+
+}, {
+	"id": "SY",
+	"name": "Syria",
+	"population": 19398448,
+	"medianAge": 23.5,
+	"GDP(PPP)": 50280000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/SY-flag.gif"
+
+}, {
+	"id": "TW",
+	"name": "Taiwan",
+	"population": 23603049,
+	"medianAge": 42.3,
+	"GDP(PPP)": 1189000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TW-flag.gif"
+
+}, {
+	"id": "TJ",
+	"name": "Tajikistan",
+	"population": 8873669,
+	"medianAge": 25.3,
+	"GDP(PPP)": 28430000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TI-flag.gif"
+
+}, {
+	"id": "TZ",
+	"name": "Tanzania",
+	"population": 58552845,
+	"medianAge": 18.2,
+	"GDP(PPP)": 162500000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TZ-flag.gif"
+
+}, {
+	"id": "TH",
+	"name": "Thailand",
+	"population": 68977400,
+	"medianAge": 39,
+	"GDP(PPP)": 1236000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TH-flag.gif"
+
+}, {
+	"id": "TL",
+	"name": "Timor-Leste",
+	"population": 1383723,
+	"medianAge": 19.6,
+	"GDP(PPP)": 7426000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TT-flag.gif"
+
+}, {
+	"id": "TG",
+	"name": "Togo",
+	"population": 8608444,
+	"medianAge": 20,
+	"GDP(PPP)": 12970000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TO-flag.gif"
+
+}, {
+	"id": "TO",
+	"name": "Tonga",
+	"population": 106095,
+	"medianAge": 24.1,
+	"GDP(PPP)": 591000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TN-flag.gif"
+
+}, {
+	"id": "TT",
+	"name": "Trinidad and Tobago",
+	"population": 1208789,
+	"medianAge": 37.8,
+	"GDP(PPP)": 42850000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TD-flag.gif"
+
+}, {
+	"id": "TN",
+	"name": "Tunisia",
+	"population": 11721177,
+	"medianAge": 32.7,
+	"GDP(PPP)": 137700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TS-flag.gif"
+
+}, {
+	"id": "TR",
+	"name": "Turkey",
+	"population": 82017514,
+	"medianAge": 32.2,
+	"GDP(PPP)": 2186000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TU-flag.gif"
+
+}, {
+	"id": "TM",
+	"name": "Turkmenistan",
+	"population": 5528627,
+	"medianAge": 29.2,
+	"GDP(PPP)": 103700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TX-flag.gif"
+
+}, {
+	"id": "TC",
+	"name": "Turks and Caicos Islands",
+	"population": 55926,
+	"medianAge": 34.6,
+	"GDP(PPP)": 632000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TK-flag.gif"
+
+}, {
+	"id": "TV",
+	"name": "Tuvalu",
+	"population": 11342,
+	"medianAge": 26.6,
+	"GDP(PPP)": 42000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/TV-flag.gif"
+
+}, {
+	"id": "UG",
+	"name": "Uganda",
+	"population": 43252966,
+	"medianAge": 15.7,
+	"GDP(PPP)": 89190000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UG-flag.gif"
+
+}, {
+	"id": "UA",
+	"name": "Ukraine",
+	"population": 43922939,
+	"medianAge": 41.2,
+	"GDP(PPP)": 369600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UP-flag.gif"
+
+}, {
+	"id": "AE",
+	"name": "United Arab Emirates",
+	"population": 9992083,
+	"medianAge": 38.4,
+	"GDP(PPP)": 696000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/AE-flag.gif"
+
+}, {
+	"id": "GB",
+	"name": "United Kingdom",
+	"population": 65761117,
+	"medianAge": 40.6,
+	"GDP(PPP)": 2925000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UK-flag.gif"
+
+}, {
+	"id": "US",
+	"name": "United States",
+	"population": 332639102,
+	"medianAge": 38.5,
+	"GDP(PPP)": 19490000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/US-flag.gif"
+
+}, {
+	"id": "UY",
+	"name": "Uruguay",
+	"population": 3387605,
+	"medianAge": 35.5,
+	"GDP(PPP)": 78160000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UY-flag.gif"
+
+}, {
+	"id": "UZ",
+	"name": "Uzbekistan",
+	"population": 30565411,
+	"medianAge": 30.1,
+	"GDP(PPP)": 223000000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/UZ-flag.gif"
+
+}, {
+	"id": "VU",
+	"name": "Vanuatu",
+	"population": 298333,
+	"medianAge": 23,
+	"GDP(PPP)": 772000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/NH-flag.gif"
+
+}, {
+	"id": "VE",
+	"name": "Venezuela",
+	"population": 28644603,
+	"medianAge": 30,
+	"GDP(PPP)": 381600000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VE-flag.gif"
+
+}, {
+	"id": "VN",
+	"name": "Vietnam",
+	"population": 98721275,
+	"medianAge": 31.9,
+	"GDP(PPP)": 648700000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VM-flag.gif"
+
+}, {
+	"id": "VI",
+	"name": "Virgin Islands",
+	"population": 106235,
+	"medianAge": 41.8,
+	"GDP(PPP)": 3872000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/VQ-flag.gif"
+
+}, {
+	"id": "WF",
+	"name": "Wallis and Futuna",
+	"population": 15854,
+	"medianAge": 34,
+	"GDP(PPP)": 60000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WF-flag.gif"
+
+}, {
+	"id": "PS",
+	"name": "West Bank",
+	"population": 2900034,
+	"medianAge": 21.9,
+	"GDP(PPP)": 21220000000,
+	"flag": "https://flaglane.com/download/palestinian-flag/palestinian-flag-medium.gif"
+
+}, {
+	"id": "EH",
+	"name": "Western Sahara",
+	"population": 652271,
+	"medianAge": 21.8,
+	"GDP(PPP)": 906500000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/WI-flag.gif"
+
+}, {
+	"id": "YE",
+	"name": "Yemen",
+	"population": 29884405,
+	"medianAge": 19.8,
+	"GDP(PPP)": 73630000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/YM-flag.gif"
+
+}, {
+	"id": "ZM",
+	"name": "Zambia",
+	"population": 17426623,
+	"medianAge": 16.9,
+	"GDP(PPP)": 68930000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ZA-flag.gif"
+
+}, {
+	"id": "ZW",
+	"name": "Zimbabwe",
+	"population": 14546314,
+	"medianAge": 20.5,
+	"GDP(PPP)": 34270000000,
+	"flag": "https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/ZI-flag.gif"
+
+}]
