@@ -20,26 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-app'`, () => {
+  it(`should have as title 'not this'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-app');
+    expect(app.title).toEqual('not this');
   });
 
-  it('should render title', () => {
+/*  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('my-app app is running!');
-  });
-});
-
-// miller
-describe('millerButton', () => {
-  it('Change projection to miller', () => {
-
-    chart.projection = millerProj;
-    expect(chart.projection).to.equal('millerProj');
-
-  });
+  });*/
 });
