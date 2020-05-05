@@ -1,6 +1,11 @@
 /**
  * ---------------------------------------
- * This demo was created using amCharts 4.
+ * This demo was created using amCharts 4
+ * 
+ * Co-Creaters:
+ * Roy Grady - rag189
+ * Brianna Kelley - brk28
+ * Ralph Kelley - rlk81
  *
  * For more information visit:
  * https://www.amcharts.com/
